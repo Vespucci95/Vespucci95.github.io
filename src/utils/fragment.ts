@@ -6,6 +6,7 @@ export const SiteFragment = graphql`
             title
             description
             siteUrl
+            author
         }
     }
 `;
