@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
 import { MEDIA_QUERY_MAX_WIDTH } from '@/styles/Theme';
+import { MAX_WIDTH } from '@/constants';
 
 export const Container = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 768px;
+    max-width: ${MAX_WIDTH}px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 20px 0 60px 0;

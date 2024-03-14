@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tips/2.md",
+                "file": "tips/4.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tips/2.md",
+                "file": "tips/4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tips/2.md",
+                "file": "tips/4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tips/2.md"
+                "file": "tips/4.md"
               }
             }
           },
@@ -159,8 +159,8 @@
   "active": "2a4334251bdb9f30",
   "lastOpenFiles": [
     "tips/3.md",
-    "tips/4.md",
     "tips/2.md",
+    "tips/4.md",
     "media/img-1.jpg",
     "tips",
     "media/img-5.png",
