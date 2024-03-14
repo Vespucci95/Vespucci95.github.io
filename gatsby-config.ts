@@ -141,21 +141,21 @@ const config: GatsbyConfig = {
             },
             __key: 'pages',
         },
-        // {
-        //     resolve: 'gatsby-source-filesystem',
-        //     options: {
-        //         name: 'media',
-        //         path: `${__dirname}/contents/Vespucci95.github.io/media`,
-        //     },
-        // },
-        // {
-        //     resolve: 'gatsby-source-filesystem',
-        //     options: {
-        //         name: 'posts',
-        //         path: `${__dirname}/contents`,
-        //         ignore: [`**/.*`],
-        //     },
-        // },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'media',
+                path: `${__dirname}/contents/Vespucci95.github.io/media`,
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'posts',
+                path: `${__dirname}/contents`,
+                ignore: [`**/.*`],
+            },
+        },
     ],
 };
 

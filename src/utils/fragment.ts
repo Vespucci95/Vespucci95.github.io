@@ -19,3 +19,32 @@ export const FileFragment = graphql`
         publicURL
     }
 `;
+
+export const PostFragment = graphql`
+    fragment Post on MarkdownRemarkEdge {
+        next {
+            fields {
+                slug
+            }
+        }
+        node {
+            id
+            wordCount {
+                paragraphs
+                sentences
+                words
+            }
+            excerpt
+            frontmatter {
+                title
+                date(formatString: "YYYY-MM-DD")
+                tags
+                categories
+            }
+            fields {
+                slug
+                hashTag
+            }
+        }
+    }
+`
