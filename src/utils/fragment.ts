@@ -21,7 +21,7 @@ export const FileFragment = graphql`
 `;
 
 export const PostFragment = graphql`
-    fragment Posts on MarkdownRemarkEdge {
+    fragment Post on MarkdownRemarkEdge {
         next {
             fields {
                 slug
