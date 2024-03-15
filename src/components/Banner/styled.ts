@@ -26,6 +26,13 @@ export const Title = styled.h1`
 export const Profile = styled.div`
     width: 245px;
     height: 245px;
-    border-radius: 60px;
-    background: #8c8c8c;
+    overflow: hidden;
+`;
+
+export const Mask = styled.div<{ src: string }>`
+    display: flex;
+    width: 100%;
+    height: 100%;
+    mask: url(${props => props.src}) no-repeat 50% 50% / contain;
+    -webkit-mask-image: url(${props => props.src} no-repeat 50% 50% / contain;;;;;;
 `;

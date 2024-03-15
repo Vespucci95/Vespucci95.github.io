@@ -1,7 +1,21 @@
 import React from 'react';
 import * as S from './styled';
+import { graphql, useStaticQuery } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Banner = () => {
+    const { image, svg } = useStaticQuery(graphql`
+        query getProfile {
+            image: file(relativePath: { eq: "profile-image.png" }) {
+                childImageSharp {
+                    gatsbyImageData(width: 245, height: 245)
+                }
+            }
+            svg: file(relativePath: { eq: "mask.svg" }) {
+                publicURL
+            }
+        }
+    `);
     return (
         <S.Container>
             <S.TitleWrapper>
@@ -14,7 +28,15 @@ const Banner = () => {
                 </S.Title>
                 <S.SubTitle>TypeScript, React, ReactNative를 좋아합니다.</S.SubTitle>
             </S.TitleWrapper>
-            <S.Profile></S.Profile>
+            <S.Profile>
+                <S.Mask src={svg.publicURL}>
+                    <GatsbyImage
+                        alt={'profile'}
+                        image={image.childImageSharp.gatsbyImageData}
+                        style={{ width: 245, height: 245 }}
+                    />
+                </S.Mask>
+            </S.Profile>
         </S.Container>
     );
 };
