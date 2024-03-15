@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import { AllMarkdownRemark } from 'GatsbyGraphQL';
 import Banner from '@/components/Banner';
 import Layout from '@/components/Layout';
+import MainPosts from '@/components/MainPost';
 
 type Props = {
     mainPosts: AllMarkdownRemark;
@@ -16,7 +17,14 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
     return (
         <Layout>
             <Banner />
-            <div>body</div>
+            <div style={{ display: 'flex', width: '100%' }}>
+                <div style={{ width: '100%', display: 'flex' }}>
+                    <MainPosts edges={mainPosts.edges} />
+                </div>
+                <div style={{ minWidth: '288px', display: 'flex' }}>
+                    하루에 4시간만 일하면서 연 20억을 넘게 버는 1인 창업가들
+                </div>
+            </div>
         </Layout>
     );
 };
@@ -28,7 +36,7 @@ export default IndexPage;
 export const query = graphql`
     query ExcerptPost {
         mainPosts: allMarkdownRemark(
-            filter: { frontmatter: { categories: { regex: "/main/" } } }
+            filter: { frontmatter: { stage: { regex: "/main/" } } }
             sort: { frontmatter: { date: DESC } }
         ) {
             totalCount
@@ -37,7 +45,7 @@ export const query = graphql`
             }
         }
         subPosts: allMarkdownRemark(
-            filter: { frontmatter: { categories: { regex: "/sub/" } } }
+            filter: { frontmatter: { stage: { regex: "/sub/" } } }
             sort: { frontmatter: { date: DESC } }
         ) {
             totalCount
