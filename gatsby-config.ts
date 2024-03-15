@@ -84,6 +84,7 @@ const config: GatsbyConfig = {
                             rel: 'nofollow',
                         },
                     },
+                    `gatsby-remark-autolink-headers`,
                 ],
             },
         },
