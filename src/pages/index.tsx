@@ -7,6 +7,7 @@ import Banner from '@/components/Banner';
 import Layout from '@/components/Layout';
 import MainPosts from '@/components/MainPost';
 import SubPosts from '@/components/SubPost';
+import TwoColumnLayout from '@/components/TwoColumnLayout';
 
 type Props = {
     mainPosts: AllMarkdownRemark;
@@ -18,14 +19,10 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
     return (
         <Layout>
             <Banner />
-            <div style={{ display: 'flex', width: '100%', gap: '15px' }}>
-                <div style={{ width: '100%', display: 'flex' }}>
-                    <MainPosts edges={mainPosts.edges} />
-                </div>
-                <div style={{ minWidth: '288px', display: 'flex' }}>
-                    <SubPosts edges={subPosts.edges} />
-                </div>
-            </div>
+            <TwoColumnLayout
+                leftColumn={<MainPosts edges={mainPosts.edges} />}
+                rightColumn={<SubPosts edges={subPosts.edges} />}
+            />
         </Layout>
     );
 };

@@ -8,6 +8,8 @@ import Preface from '@/components/Preface';
 import Seo from '@/components/Seo';
 import { Utils } from '@/utils/Utils';
 import Layout from '@/components/Layout';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import TwoColumnLayout from '@/components/TwoColumnLayout';
 
 type Props = {
     post: MarkdownRemark;
@@ -18,13 +20,28 @@ type Props = {
 const PostLayout: React.FC<PageProps> = ({ data }) => {
     const { post, prev, next } = data as Props;
     const result = Utils.HashTag.create(post.html);
+    const { thumbnail } = post.frontmatter;
     return (
         <Layout>
-            <Preface {...post.frontmatter} />
-            <div className="markdown">
-                <MDXRender html={result} />
-            </div>
-            <PostNavigation prevPost={prev} nextPost={next} />
+            <TwoColumnLayout
+                leftColumn={
+                    <>
+                        {thumbnail ? (
+                            <GatsbyImage
+                                alt={post.frontmatter.title}
+                                image={thumbnail.childImageSharp.gatsbyImageData}
+                                style={{ width: '100%', height: '400px' }}
+                            />
+                        ) : null}
+                        <Preface {...post.frontmatter} />
+                        <div className="markdown">
+                            <MDXRender html={result} />
+                        </div>
+                        <PostNavigation prevPost={prev} nextPost={next} />
+                    </>
+                }
+                rightColumn={<div>nav</div>}
+            />
         </Layout>
     );
 };
@@ -48,6 +65,13 @@ export const query = graphql`
                 title
                 tags
                 stage
+                categories
+                description
+                thumbnail {
+                    childImageSharp {
+                        gatsbyImageData(width: 800)
+                    }
+                }
             }
             fields {
                 slug
