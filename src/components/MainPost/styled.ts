@@ -29,14 +29,16 @@ export const Thumbnail = styled(GatsbyImage)`
 export const PostContent = styled.div`
     display: flex;
     width: 100%;
-    gap: 10px;
+    gap: 6px;
     flex-direction: column;
     justify-content: center;
 `;
 
 export const Title = styled.p`
+    margin-bottom: 8px;
     font-size: 1.25em;
     font-weight: 300;
+    line-height: 1.14;
 `;
 
 export const Description = styled.p`

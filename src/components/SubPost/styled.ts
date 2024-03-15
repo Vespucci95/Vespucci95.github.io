@@ -24,6 +24,7 @@ export const Wrapper = styled.div`
 export const Title = styled.p`
     font-size: 0.875em;
     font-weight: 300;
+    line-height: 1.14;
 `;
 
 export const Row = styled.div`
