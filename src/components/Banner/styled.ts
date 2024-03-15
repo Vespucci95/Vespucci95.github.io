@@ -1,9 +1,11 @@
 import styled from '@emotion/styled';
+import { INNER } from '@/constants';
 
 export const Container = styled.div`
     width: 100%;
     display: flex;
-    padding: 10px 0;
+    margin-bottom: 24px;
+    padding: 10px ${INNER}px;
     align-items: center;
     justify-content: space-between;
 `;
@@ -34,5 +36,5 @@ export const Mask = styled.div<{ src: string }>`
     width: 100%;
     height: 100%;
     mask: url(${props => props.src}) no-repeat 50% 50% / contain;
-    -webkit-mask-image: url(${props => props.src} no-repeat 50% 50% / contain;;;;;;
+    -webkit-mask-image: url(${props => props.src} no-repeat 50% 50% / contain;;;;;;;;;;;;;;;;
 `;
