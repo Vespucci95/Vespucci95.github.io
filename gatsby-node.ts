@@ -24,7 +24,6 @@ query CreatePage {
           stage
           categories
           description
-          thumbnail
         }
         fields {
           slug
@@ -123,13 +122,15 @@ export const createPages: GatsbyNode['createPages'] = async ({ actions, graphql,
     const hashTags: Set<string> = new Set();
     res.data.allMarkdownRemark.edges.forEach(edge => {
         const { hashTag } = edge.node.fields;
-        hashTag.forEach(tag => hashTags.add(tag));
+        if (hashTag) {
+            hashTag.forEach(tag => hashTags.add(tag));
+        }
         createPostPages(actions, edge);
     });
     createHashTagPage(actions, [...hashTags]);
     createHashTagPages(actions, [...hashTags]);
 };
-//
+
 export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, actions }) => {
     const { createNodeField } = actions;
     if (node.internal.type === `MarkdownRemark`) {

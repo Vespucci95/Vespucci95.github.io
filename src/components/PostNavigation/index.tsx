@@ -10,11 +10,13 @@ const Navigation = (post: Omit<MarkdownRemark, 'html'> & { label: string }) => {
                 <S.Label>{post.label}</S.Label>
                 <S.Title>{post.frontmatter.title}</S.Title>
             </Link>
-            <S.TagContainer>
-                {post.frontmatter.tags.map((tag, index) => (
-                    <Tag key={index} tag={tag} />
-                ))}
-            </S.TagContainer>
+            {post.frontmatter.tags ? (
+                <S.TagContainer>
+                    {post.frontmatter.tags.map((tag, index) => (
+                        <Tag key={index} tag={tag} />
+                    ))}
+                </S.TagContainer>
+            ) : null}
         </>
     );
 };
