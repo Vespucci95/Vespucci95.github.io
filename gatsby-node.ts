@@ -19,6 +19,8 @@ query CreatePage {
           date(formatString: "YYYY-MM-DD")
           tags
           categories
+          description
+          thumbnail
         }
         fields {
           slug

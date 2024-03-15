@@ -21,7 +21,7 @@ export const FileFragment = graphql`
 `;
 
 export const PostFragment = graphql`
-    fragment Post on MarkdownRemarkEdge {
+    fragment Posts on MarkdownRemarkEdge {
         next {
             fields {
                 slug
@@ -40,6 +40,12 @@ export const PostFragment = graphql`
                 date(formatString: "YYYY-MM-DD")
                 tags
                 categories
+                description
+                thumbnail {
+                    childImageSharp {
+                        gatsbyImageData(width: 800)
+                    }
+                }
             }
             fields {
                 slug

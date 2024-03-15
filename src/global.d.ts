@@ -1,9 +1,14 @@
 declare module 'GatsbyGraphQL' {
+    import { IGatsbyImageData } from 'gatsby-plugin-image';
+
     interface Frontmatter {
         readonly title: string;
         readonly date: string;
         readonly tags: string[];
         readonly stage: string;
+        readonly categories: string;
+        readonly description: string;
+        readonly thumbnail: IGatsbyImageData | undefined
     }
     interface Fields {
         readonly slug: string;
