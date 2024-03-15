@@ -24,7 +24,7 @@ const MainPosts = ({ edges }: Props) => {
                             <S.Row>
                                 <S.Info>
                                     {edge.node.frontmatter.categories}
-                                    {hasHashTag ? ' ∣ ' + edge.node.fields.hashTag.join(',') : null}
+                                    {hasHashTag ? ' ∣ ' + edge.node.fields.hashTag.join(', ') : null}
                                 </S.Info>
                                 <S.Date>{edge.node.frontmatter.date}</S.Date>
                             </S.Row>

@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { INNER } from '@/constants';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 export const Container = styled.div`
     width: 100%;
@@ -25,9 +26,9 @@ export const Title = styled.h1`
     line-height: 1.2;
 `;
 
-export const Profile = styled.div`
-    width: 245px;
-    height: 245px;
+export const ProfileWrapper = styled.div`
+    width: 264px;
+    height: 264px;
     overflow: hidden;
 `;
 
@@ -36,5 +37,10 @@ export const Mask = styled.div<{ src: string }>`
     width: 100%;
     height: 100%;
     mask: url(${props => props.src}) no-repeat 50% 50% / contain;
-    -webkit-mask-image: url(${props => props.src} no-repeat 50% 50% / contain;;;;;;;;;;;;;;;;
+    -webkit-mask-image: url(${props => props.src} no-repeat 50% 50% / contain;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+`;
+
+export const Profile = styled(GatsbyImage)`
+    width: 100%;
+    height: 100%;
 `;

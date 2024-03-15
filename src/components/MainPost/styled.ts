@@ -1,16 +1,17 @@
 import styled from '@emotion/styled';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import { INNER } from '@/constants';
 
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 42px;
+    padding: ${INNER}px;
 `;
 
 export const Wrapper = styled.div`
     display: flex;
     gap: 18px;
-    padding: 12px;
     cursor: pointer;
     transition: all 0.2s;
     &:hover {
@@ -49,10 +50,14 @@ export const Row = styled.div`
     justify-content: space-between;
 `;
 export const Info = styled.p`
+    overflow: hidden;
+    white-space: nowrap;
     font-size: 0.875em;
     color: #939393;
+    text-overflow: ellipsis;
 `;
 export const Date = styled.p`
+    white-space: nowrap;
     font-size: 0.75em;
     color: #939393;
 `;

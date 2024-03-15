@@ -6,6 +6,7 @@ import { AllMarkdownRemark } from 'GatsbyGraphQL';
 import Banner from '@/components/Banner';
 import Layout from '@/components/Layout';
 import MainPosts from '@/components/MainPost';
+import SubPosts from '@/components/SubPost';
 
 type Props = {
     mainPosts: AllMarkdownRemark;
@@ -17,12 +18,12 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
     return (
         <Layout>
             <Banner />
-            <div style={{ display: 'flex', width: '100%' }}>
+            <div style={{ display: 'flex', width: '100%', gap: '15px' }}>
                 <div style={{ width: '100%', display: 'flex' }}>
                     <MainPosts edges={mainPosts.edges} />
                 </div>
                 <div style={{ minWidth: '288px', display: 'flex' }}>
-                    하루에 4시간만 일하면서 연 20억을 넘게 버는 1인 창업가들
+                    <SubPosts edges={subPosts.edges} />
                 </div>
             </div>
         </Layout>
