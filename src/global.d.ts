@@ -8,7 +8,11 @@ declare module 'GatsbyGraphQL' {
         readonly stage: string;
         readonly categories: string;
         readonly description: string;
-        readonly thumbnail: IGatsbyImageData | undefined
+        readonly thumbnail: {
+            childImageSharp: {
+                gatsbyImageData: IGatsbyImageData;
+            };
+        };
     }
     interface Fields {
         readonly slug: string;

@@ -3,7 +3,10 @@ import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 import { createFilePath } from 'gatsby-source-filesystem';
 import { AllMarkdownRemark, Edges } from 'GatsbyGraphQL';
 
-type CreateNodeFn = <T extends Record<string, unknown> = Record<string, string>>(node: Node & T, actions: Actions) => unknown;
+type CreateNodeFn = <T extends Record<string, unknown> = Record<string, string>>(
+    node: Node & T,
+    actions: Actions
+) => unknown;
 type CreatePageFn<T> = (actions: Actions, payload: T) => void;
 type CreatePageProps = {
     allMarkdownRemark: AllMarkdownRemark;
@@ -18,6 +21,7 @@ query CreatePage {
           title
           date(formatString: "YYYY-MM-DD")
           tags
+          stage
           categories
           description
           thumbnail
