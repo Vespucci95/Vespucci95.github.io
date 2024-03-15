@@ -11,6 +11,11 @@ export const Wrapper = styled.div`
     display: flex;
     gap: 18px;
     padding: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+        transform: scale(1.015);
+    }
 `;
 
 export const Thumbnail = styled(GatsbyImage)`
