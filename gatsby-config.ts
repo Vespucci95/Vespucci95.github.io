@@ -66,7 +66,7 @@ const config: GatsbyConfig = {
                             className: `post-toc`,
                             maintainCase: false,
                             removeAccents: true,
-                            elements: [`h1`, `h2`, `h3`, `h4`],
+                            elements: [`h1`, `h2`, `h3`],
                         },
                     },
                     {
