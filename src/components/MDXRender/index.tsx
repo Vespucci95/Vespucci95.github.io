@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
-import { MEDIA_QUERY_MAX_WIDTH } from '@/styles/Theme';
 
 interface PostContentProps {
     html: string;
@@ -8,10 +7,7 @@ interface PostContentProps {
 
 const MarkdownRenderer = styled.div`
     * {
-        line-height: 2;
-        @media ${MEDIA_QUERY_MAX_WIDTH} {
-            line-height: 1.6;
-        }
+        line-height: 1.6;
     }
 
     h1,
@@ -30,6 +26,7 @@ const MarkdownRenderer = styled.div`
     h2,
     h3 {
         margin-top: 1.25em;
+        line-height: 1.14;
     }
 
     h1 {
@@ -95,9 +92,6 @@ const MarkdownRenderer = styled.div`
         text-align: center;
         text-decoration: line-through;
         color: ${({ theme }) => theme.color.gray500};
-    }
-    a {
-        text-decoration: underline;
     }
 
     table {

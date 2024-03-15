@@ -8,7 +8,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
     padding: 4px 8px;
-    max-width: 30%;
+    max-width: 40%;
     min-width: 26%;
 `;
 
@@ -18,13 +18,21 @@ export const Label = styled.p`
 `;
 
 export const Title = styled.p`
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     font-weight: 200;
     margin-bottom: 0.5em;
 `;
 
-export const TagContainer = styled.div`
+export const GrayText = styled.p`
     font-size: 0.875em;
+    font-weight: 200;
+    color: ${({ theme }) => theme.color.gray300};
+`;
+
+export const Row = styled.div`
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.25em;
+    align-items: flex-end;
+    justify-content: space-between;
 `;

@@ -10,12 +10,25 @@ import { Utils } from '@/utils/Utils';
 import Layout from '@/components/Layout';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import TwoColumnLayout from '@/components/TwoColumnLayout';
+import styled from '@emotion/styled';
+import { INNER } from '@/constants';
 
 type Props = {
     post: MarkdownRemark;
     prev: MarkdownRemark;
     next: MarkdownRemark;
 };
+
+const Content = styled.div`
+    padding: 10px ${INNER}px;
+`;
+
+const Thumbnail = styled(GatsbyImage)`
+    width: 100%;
+    height: 360px;
+    border-radius: 12px;
+    margin-bottom: ${INNER * 4}px;
+`;
 
 const PostLayout: React.FC<PageProps> = ({ data }) => {
     const { post, prev, next } = data as Props;
@@ -25,20 +38,26 @@ const PostLayout: React.FC<PageProps> = ({ data }) => {
         <Layout>
             <TwoColumnLayout
                 leftColumn={
-                    <>
+                    <Content>
                         {thumbnail ? (
-                            <GatsbyImage
+                            <Thumbnail
                                 alt={post.frontmatter.title}
                                 image={thumbnail.childImageSharp.gatsbyImageData}
-                                style={{ width: '100%', height: '400px' }}
+                                draggable={false}
                             />
                         ) : null}
-                        <Preface {...post.frontmatter} />
+                        <Preface
+                            title={post.frontmatter.title}
+                            thumbnail={post.frontmatter.thumbnail}
+                            tags={post.fields.hashTag}
+                            date={post.frontmatter.date}
+                            categories={post.frontmatter.categories}
+                        />
                         <div className="markdown">
                             <MDXRender html={result} />
                         </div>
                         <PostNavigation prevPost={prev} nextPost={next} />
-                    </>
+                    </Content>
                 }
                 rightColumn={<div>nav</div>}
             />
@@ -75,6 +94,7 @@ export const query = graphql`
             }
             fields {
                 slug
+                hashTag
             }
         }
         prev: markdownRemark(fields: { slug: { eq: $prevSlug } }) {
@@ -85,6 +105,7 @@ export const query = graphql`
                 title
                 tags
                 stage
+                categories
             }
             fields {
                 slug
@@ -98,6 +119,7 @@ export const query = graphql`
                 title
                 tags
                 stage
+                categories
             }
             fields {
                 slug

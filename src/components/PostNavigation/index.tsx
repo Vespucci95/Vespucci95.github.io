@@ -2,21 +2,18 @@ import React from 'react';
 import * as S from './styled';
 import { MarkdownRemark } from 'GatsbyGraphQL';
 import { Link } from 'gatsby';
-import Tag from '@/components/Tag';
+
 const Navigation = (post: Omit<MarkdownRemark, 'html'> & { label: string }) => {
     return (
         <>
             <Link to={post.fields.slug}>
                 <S.Label>{post.label}</S.Label>
                 <S.Title>{post.frontmatter.title}</S.Title>
+                <S.Row>
+                    <S.GrayText>{post.frontmatter.categories}</S.GrayText>
+                    <S.GrayText>{post.frontmatter.date}</S.GrayText>
+                </S.Row>
             </Link>
-            {post.frontmatter.tags ? (
-                <S.TagContainer>
-                    {post.frontmatter.tags.map((tag, index) => (
-                        <Tag key={index} tag={tag} />
-                    ))}
-                </S.TagContainer>
-            ) : null}
         </>
     );
 };

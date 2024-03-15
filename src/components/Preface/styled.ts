@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Link } from 'gatsby';
 
 export const Container = styled.div`
     width: 100%;
@@ -7,21 +8,23 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
     margin-bottom: 0.5em;
-    font-size: 2.25em;
+    font-size: 1.75em;
+    line-height: 1.14;
     font-weight: 200;
     color: ${({ theme }) => theme.color.black};
-`;
-
-export const TagContainer = styled.div`
-    display: flex;
-    gap: 0.25em;
-    max-width: 70%;
 `;
 
 export const Date = styled.p`
     font-size: 0.875em;
     font-weight: 200;
-    color: ${({ theme }) => theme.color.black};
+    color: ${({ theme }) => theme.color.gray300};
+    white-space: nowrap;
+`;
+
+export const Category = styled.p`
+    font-size: 1em;
+    font-weight: 200;
+    color: ${({ theme }) => theme.color.gray300};
 `;
 
 export const Row = styled.div`
@@ -29,3 +32,5 @@ export const Row = styled.div`
     align-items: flex-end;
     justify-content: space-between;
 `;
+
+export const Tag = styled(Link)``;

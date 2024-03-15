@@ -8,7 +8,8 @@ const lightTheme: Theme = {
         white: '#FFF',
         link: '#4078c0',
         gray500: '#999',
-        blackA20: 'rgba(0,0,0,0.2)'
+        gray300: '#939393',
+        blackA20: 'rgba(0,0,0,0.2)',
     },
 };
 
@@ -20,7 +21,8 @@ const darkTheme: Theme = {
         white: '#000',
         link: '#4078c0',
         gray500: '#999',
-        blackA20: 'rgba(255,255,255,0.2)'
+        gray300: '#939393',
+        blackA20: 'rgba(255,255,255,0.2)',
     },
 };
 
