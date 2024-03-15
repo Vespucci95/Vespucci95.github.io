@@ -34,6 +34,7 @@ const Banner = () => {
                         alt={'profile'}
                         image={image.childImageSharp.gatsbyImageData}
                         style={{ width: 245, height: 245 }}
+                        draggable={false}
                     />
                 </S.Mask>
             </S.Profile>
