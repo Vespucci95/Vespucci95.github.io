@@ -2,24 +2,30 @@ import * as React from 'react';
 import { graphql, PageProps } from 'gatsby';
 import Seo from '@/components/Seo';
 import { AllMarkdownRemark } from 'GatsbyGraphQL';
-import Post from '@/components/Post';
-import Border from '@/components/Border';
 import Layout from '@/components/Layout';
+import { MainPost } from '@/components/MainPost';
+import styled from '@emotion/styled';
 
 type Props = {
     posts: AllMarkdownRemark;
 };
 
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 42px;
+`;
+
 const HashTagTemplate: React.FC<PageProps> = ({ data }) => {
     const { posts } = data as Props;
     return (
         <Layout>
-            {posts.edges.map(({ node, next }) => (
-                <>
-                    <Post key={node.id} post={node} />
-                    {next && <Border />}
-                </>
-            ))}
+            <Container>
+                {posts.edges.map((edge, index) => (
+                    <MainPost edge={edge} key={edge.node.id} />
+                ))}
+            </Container>
         </Layout>
     );
 };
@@ -37,29 +43,7 @@ export const query = graphql`
         posts: allMarkdownRemark(filter: { html: { regex: $hashTag } }) {
             totalCount
             edges {
-                next {
-                    fields {
-                        slug
-                    }
-                }
-                node {
-                    id
-                    wordCount {
-                        paragraphs
-                        sentences
-                        words
-                    }
-                    excerpt
-                    frontmatter {
-                        title
-                        date(formatString: "YYYY-MM-DD")
-                        tags
-                    }
-                    fields {
-                        slug
-                        hashTag
-                    }
-                }
+                ...Post
             }
         }
     }

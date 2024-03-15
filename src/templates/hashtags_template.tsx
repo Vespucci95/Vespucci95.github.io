@@ -15,7 +15,7 @@ const HashTagTemplate: React.FC<PageProps> = ({ data, location, pageContext }) =
             <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '20px' }}>
                 {hashTags.map((hashTag, index) => {
                     return (
-                        <div>
+                        <div key={hashTag}>
                             <Link to={`/hashtag/${hashTag.replace(/#/g, '')}`}>
                                 <p key={index} style={{ color: '#4078c0' }}>
                                     {hashTag}

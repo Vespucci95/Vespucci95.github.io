@@ -39,6 +39,7 @@ export const PostFragment = graphql`
                 title
                 date(formatString: "YYYY-MM-DD")
                 tags
+                stage
                 categories
                 description
                 thumbnail {
@@ -53,4 +54,4 @@ export const PostFragment = graphql`
             }
         }
     }
-`
+`;
