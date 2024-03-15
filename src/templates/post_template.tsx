@@ -12,6 +12,7 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import TwoColumnLayout from '@/components/TwoColumnLayout';
 import styled from '@emotion/styled';
 import { INNER } from '@/constants';
+import { MEDIA_QUERY_MAX_WIDTH } from '@/styles/Theme';
 
 type Props = {
     post: MarkdownRemark;
@@ -48,6 +49,9 @@ const TOC = styled.div`
         li {
             margin-left: 10px;
         }
+    }
+    @media ${MEDIA_QUERY_MAX_WIDTH} {
+        display: none;
     }
 `;
 

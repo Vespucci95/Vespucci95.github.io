@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { INNER } from '@/constants';
+import { MEDIA_QUERY_MAX_WIDTH } from '@/styles/Theme';
 
 export const Container = styled.div`
     display: flex;
@@ -8,6 +9,9 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 28px;
     padding: ${INNER}px;
+    @media ${MEDIA_QUERY_MAX_WIDTH} {
+        max-width: 100%;
+    }
 `;
 
 export const Wrapper = styled.div`

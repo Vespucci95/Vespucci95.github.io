@@ -19,7 +19,6 @@ const MarkdownRenderer = styled.div`
     p,
     li {
         color: ${({ theme }) => theme.color.black};
-        text-align: justify;
     }
 
     h1,

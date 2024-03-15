@@ -5,16 +5,14 @@ import { Link } from 'gatsby';
 
 const Navigation = (post: Omit<MarkdownRemark, 'html'> & { label: string }) => {
     return (
-        <>
-            <Link to={post.fields.slug}>
-                <S.Label>{post.label}</S.Label>
-                <S.Title>{post.frontmatter.title}</S.Title>
-                <S.Row>
-                    <S.GrayText>{post.frontmatter.categories}</S.GrayText>
-                    <S.GrayText>{post.frontmatter.date}</S.GrayText>
-                </S.Row>
-            </Link>
-        </>
+        <Link to={post.fields.slug}>
+            <S.Label>{post.label}</S.Label>
+            <S.Title>{post.frontmatter.title}</S.Title>
+            <S.Row>
+                <S.GrayText>{post.frontmatter.categories}</S.GrayText>
+                <S.GrayText>{post.frontmatter.date}</S.GrayText>
+            </S.Row>
+        </Link>
     );
 };
 

@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { MEDIA_QUERY_MAX_WIDTH } from '@/styles/Theme';
 export const Container = styled.div`
     margin-top: 4em;
     display: flex;
@@ -27,6 +28,9 @@ export const GrayText = styled.p`
     font-size: 0.875em;
     font-weight: 200;
     color: ${({ theme }) => theme.color.gray300};
+    @media ${MEDIA_QUERY_MAX_WIDTH} {
+        display: none;
+    }
 `;
 
 export const Row = styled.div`
