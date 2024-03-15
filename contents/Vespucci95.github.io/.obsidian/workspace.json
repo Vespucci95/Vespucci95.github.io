@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tips/4.md",
+                "file": "TypeScript/3.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tips/4.md",
+                "file": "TypeScript/3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tips/4.md",
+                "file": "TypeScript/3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tips/4.md"
+                "file": "TypeScript/3.md"
               }
             }
           },
@@ -159,7 +159,14 @@
   "active": "2a4334251bdb9f30",
   "lastOpenFiles": [
     "TypeScript/2.md",
+    "TypeScript/3.md",
     "TypeScript/1.md",
+    "tips/4.md",
+    "tips/3.md",
+    "tips/2.md",
+    "TypeScript/img-1.jpg",
+    "tips/img-1.jpg",
+    "tips/4.md~",
     "TypeScript",
     "sub/TypeScript/1.md",
     "sub/TypeScript",
@@ -167,9 +174,6 @@
     "main/TypeScript/1.md",
     "main/TypeScript",
     "main",
-    "tips/3.md",
-    "tips/2.md",
-    "tips/4.md",
     "media/img-1.jpg",
     "tips",
     "media/img-5.png",
