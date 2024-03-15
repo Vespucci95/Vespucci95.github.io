@@ -1,10 +1,10 @@
 import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 import Seo from '@/components/Seo';
-import Layout from '@/layout';
 import { graphql } from 'gatsby';
 import { AllMarkdownRemark } from 'GatsbyGraphQL';
 import Banner from '@/components/Banner';
+import Layout from '@/components/Layout';
 
 type Props = {
     mainPosts: AllMarkdownRemark;
@@ -16,7 +16,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
     return (
         <Layout>
             <Banner />
-            <div></div>
+            <div>body</div>
         </Layout>
     );
 };
