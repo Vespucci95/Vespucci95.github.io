@@ -18,11 +18,9 @@ export const Label = styled.p`
 `;
 
 export const Title = styled.p`
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-weight: 200;
-    margin-bottom: 0.5em;
+    font-size: 0.875em;
+    margin-bottom: 10px;
+    line-height: 1.14;
 `;
 
 export const GrayText = styled.p`

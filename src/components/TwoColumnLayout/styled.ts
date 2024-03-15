@@ -13,7 +13,7 @@ export const LeftColumn = styled.div`
 `;
 export const RightColumn = styled.div`
     display: flex;
-    width: 100%;
+    min-width: 288px;
     max-width: 288px;
     flex-direction: column;
 `;
