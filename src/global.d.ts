@@ -46,6 +46,7 @@ declare module 'GatsbyGraphQL' {
         readonly rawMarkdownBody: string;
         readonly frontmatter: Frontmatter;
         readonly fields: Fields;
+        readonly tableOfContents: string;
     }
     interface SiteMetaData {
         readonly title: string;

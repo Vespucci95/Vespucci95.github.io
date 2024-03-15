@@ -60,6 +60,16 @@ const config: GatsbyConfig = {
                         },
                     },
                     {
+                        resolve: `gatsby-remark-autolink-headers`,
+                        options: {
+                            offsetY: `100`,
+                            className: `post-toc`,
+                            maintainCase: false,
+                            removeAccents: true,
+                            elements: [`h1`, `h2`, `h3`, `h4`],
+                        },
+                    },
+                    {
                         resolve: 'gatsby-remark-prismjs',
                         options: {
                             classPrefix: 'language-',
@@ -84,7 +94,6 @@ const config: GatsbyConfig = {
                             rel: 'nofollow',
                         },
                     },
-                    `gatsby-remark-autolink-headers`,
                 ],
             },
         },

@@ -30,6 +30,27 @@ const Thumbnail = styled(GatsbyImage)`
     margin-bottom: ${INNER * 4}px;
 `;
 
+const TOC = styled.div`
+    position: sticky;
+    top: 40px;
+    display: flex;
+    padding: 10px ${INNER}px;
+    font-size: 0.875em;
+    font-weight: 300;
+    justify-content: center;
+    a {
+        color: ${({ theme }) => theme.color.gray300};
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        li {
+            margin-left: 10px;
+        }
+    }
+`;
+
 const PostLayout: React.FC<PageProps> = ({ data }) => {
     const { post, prev, next } = data as Props;
     const result = Utils.HashTag.create(post.html);
@@ -59,7 +80,7 @@ const PostLayout: React.FC<PageProps> = ({ data }) => {
                         <PostNavigation prevPost={prev} nextPost={next} />
                     </Content>
                 }
-                rightColumn={<div>nav</div>}
+                rightColumn={<TOC dangerouslySetInnerHTML={{ __html: post.tableOfContents }} />}
             />
         </Layout>
     );
@@ -96,6 +117,7 @@ export const query = graphql`
                 slug
                 hashTag
             }
+            tableOfContents
         }
         prev: markdownRemark(fields: { slug: { eq: $prevSlug } }) {
             id
