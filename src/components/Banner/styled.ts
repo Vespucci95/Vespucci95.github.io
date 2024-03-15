@@ -9,13 +9,12 @@ export const Container = styled.div`
     padding: 10px ${INNER}px;
     align-items: center;
     justify-content: space-between;
-    background: red;
 `;
 
 export const TitleWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
 `;
 
 export const SubTitle = styled.p``;
@@ -39,7 +38,7 @@ export const Mask = styled.div<{ src: string }>`
     height: 100%;
     mask: url(${props => props.src}) no-repeat 50% 50% / contain;
     -webkit-mask-image: url(${props =>
-        props.src} no-repeat 50% 50% / contain;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+        props.src} no-repeat 50% 50% / contain;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 `;
 
 export const Profile = styled(GatsbyImage)`
