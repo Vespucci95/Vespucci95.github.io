@@ -1,6 +1,5 @@
 import React from 'react';
 import * as S from './styled';
-import Button from '@/components/Button';
 
 const Header = () => {
     return (
@@ -11,7 +10,7 @@ const Header = () => {
                     <S.Menu to="/posts">Posts</S.Menu>
                     <S.Menu to="/hashtag">HashTags</S.Menu>
                     <S.Menu to="/about">About</S.Menu>
-                    <Button.Theme />
+                    {/*<Button.Theme />*/}
                 </S.MenuGroup>
             </S.Container>
         </S.Wrapper>
