@@ -29,5 +29,6 @@
   },
   "rules": {
     "no-undef": "off"
-  }
+  },
+  "ignorePatterns": ["gatsby-browser.ts", "gatsby-config.ts", "/env"]
 }
