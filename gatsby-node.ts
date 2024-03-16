@@ -20,7 +20,6 @@ query CreatePage {
         frontmatter {
           title
           date(formatString: "YYYY-MM-DD")
-          tags
           stage
           categories
           description
@@ -34,7 +33,6 @@ query CreatePage {
         frontmatter {
           title
           date(formatString: "YYYY-MM-DD")
-          tags
         }
         fields {
           slug
@@ -45,7 +43,6 @@ query CreatePage {
         frontmatter {
           title
           date(formatString: "YYYY-MM-DD")
-          tags
         }
         fields {
           slug

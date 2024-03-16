@@ -4,7 +4,6 @@ declare module 'GatsbyGraphQL' {
     interface Frontmatter {
         readonly title: string;
         readonly date: string;
-        readonly tags: string[];
         readonly stage: string;
         readonly categories: string;
         readonly description: string;

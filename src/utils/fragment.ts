@@ -38,7 +38,6 @@ export const PostFragment = graphql`
             frontmatter {
                 title
                 date(formatString: "YYYY-MM-DD")
-                tags
                 stage
                 categories
                 description

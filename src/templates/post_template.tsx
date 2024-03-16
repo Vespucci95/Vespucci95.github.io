@@ -107,7 +107,6 @@ export const query = graphql`
             frontmatter {
                 date(formatString: "YYYY.MM.DD")
                 title
-                tags
                 stage
                 categories
                 description
@@ -129,7 +128,6 @@ export const query = graphql`
             frontmatter {
                 date(formatString: "YYYY.MM.DD")
                 title
-                tags
                 stage
                 categories
             }
@@ -143,7 +141,6 @@ export const query = graphql`
             frontmatter {
                 date(formatString: "YYYY.MM.DD")
                 title
-                tags
                 stage
                 categories
             }
