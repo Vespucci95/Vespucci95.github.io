@@ -9,7 +9,7 @@ const config: GatsbyConfig = {
         siteUrl: `https://vespucci95.github.io`,
         author: `이현서`,
         description: `frontend developer`,
-        googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION,
+        googleSiteVerification: `${process.env.GOOGLE_SITE_VERIFICATION}`,
     },
     graphqlTypegen: true,
     plugins: [
