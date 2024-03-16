@@ -2,7 +2,12 @@ import React from 'react';
 import * as S from './styled';
 import { Frontmatter } from 'GatsbyGraphQL';
 
-const Preface = ({ title, date, tags, categories }: Omit<Frontmatter, 'stage' | 'description'>) => {
+const Preface = ({
+    title,
+    date,
+    tags,
+    categories,
+}: Omit<Frontmatter, 'stage' | 'description'> & { tags: string[] }) => {
     return (
         <S.Container>
             <S.Title>{title}</S.Title>
