@@ -5,6 +5,7 @@ import { AllMarkdownRemark } from 'GatsbyGraphQL';
 import Layout from '@/components/Layout';
 import { MainPost } from '@/components/MainPost';
 import styled from '@emotion/styled';
+import { INNER } from '@/constants';
 
 type Props = {
     posts: AllMarkdownRemark;
@@ -15,6 +16,7 @@ const Container = styled.div`
     flex-direction: column;
     width: 100%;
     gap: 42px;
+    padding: ${INNER}px;
 `;
 
 const HashTagTemplate: React.FC<PageProps> = ({ data }) => {
