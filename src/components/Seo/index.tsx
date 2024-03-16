@@ -37,7 +37,7 @@ const Seo = ({ title }: Props) => {
             }
         }
     `);
-    
+
     return (
         <>
             <title>{`${meta.siteMetadata.author} | ${title}`}</title>
@@ -56,6 +56,7 @@ const Seo = ({ title }: Props) => {
             <meta name="twitter:title" content={`${meta.siteMetadata.author} | ${title}`} />
             <meta name="twitter:description" content={meta.siteMetadata.description} />
             <meta name="twitter:image" content={meta.siteMetadata.siteUrl} />
+            <meta name="google-site-verification" content={meta.siteMetadata.googleSiteVerification} />
             <meta name="twitter:site" content="Vespucci95" />
             <meta name="twitter:creator" content="Vespucci95" />
         </>

@@ -1,4 +1,7 @@
+import dotenv from 'dotenv';
 import type { GatsbyConfig } from 'gatsby';
+
+dotenv.config();
 
 const config: GatsbyConfig = {
     siteMetadata: {
@@ -6,6 +9,7 @@ const config: GatsbyConfig = {
         siteUrl: `https://vespucci95.github.io`,
         author: `이현서`,
         description: `frontend developer`,
+        googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION,
     },
     graphqlTypegen: true,
     plugins: [
