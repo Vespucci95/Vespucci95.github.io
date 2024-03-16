@@ -57,6 +57,7 @@ const Seo = ({ title }: Props) => {
             <meta name="twitter:description" content={meta.siteMetadata.description} />
             <meta name="twitter:image" content={meta.siteMetadata.siteUrl} />
             <meta name="google-site-verification" content="NRo4yKk2rmtkRhrG_L6RCXb1Jcw8VZwg6beWfo3U2t0" />
+            <meta name="naver-site-verification" content="bad4dc83cef571597393ea6e13eed3807d2b3a7f" />
             <meta name="twitter:site" content="Vespucci95" />
             <meta name="twitter:creator" content="Vespucci95" />
         </>
