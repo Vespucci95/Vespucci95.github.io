@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { graphql, Link, PageProps } from 'gatsby';
+import { Link, PageProps } from 'gatsby';
 import Seo from '@/components/Seo';
 import Layout from '@/components/Layout';
 
@@ -7,8 +7,7 @@ type PageContext = {
     hashTags: string[];
 };
 
-const HashTagTemplate: React.FC<PageProps> = ({ data, location, pageContext }) => {
-    const query = new URLSearchParams(location.search).get('name');
+const HashTagTemplate: React.FC<PageProps> = ({ pageContext }) => {
     const { hashTags } = pageContext as PageContext;
     return (
         <Layout>
@@ -32,20 +31,5 @@ const HashTagTemplate: React.FC<PageProps> = ({ data, location, pageContext }) =
 export const Head = ({ pageContext }: { pageContext: { hashTag: string; title: string } }) => {
     return <Seo title="HashTags" />;
 };
-
-export const query = graphql`
-    query getAllHashTag {
-        allMarkdownRemark(filter: { html: { regex: "'/다/gm" } }) {
-            edges {
-                node {
-                    html
-                    fields {
-                        hashTag
-                    }
-                }
-            }
-        }
-    }
-`;
 
 export default HashTagTemplate;
