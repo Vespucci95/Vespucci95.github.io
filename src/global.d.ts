@@ -52,7 +52,6 @@ declare module 'GatsbyGraphQL' {
         readonly description: string;
         readonly siteUrl: string;
         readonly author: string;
-        readonly googleSiteVerification: string;
     }
     interface MetaData {
         siteMetadata: SiteMetaData;
