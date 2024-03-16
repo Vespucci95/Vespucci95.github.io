@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { INNER } from '@/constants';
+import { MEDIA_QUERY_MAX_WIDTH } from '@/styles/Theme';
 
 export const Container = styled.div`
     display: flex;
@@ -24,6 +25,9 @@ export const Thumbnail = styled(GatsbyImage)`
     width: 190px;
     min-width: 190px;
     height: 170px;
+    @media ${MEDIA_QUERY_MAX_WIDTH} {
+        display: none;
+    }
 `;
 
 export const PostContent = styled.div`
