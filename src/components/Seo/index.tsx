@@ -24,7 +24,7 @@ type Props = {
 };
 
 const Seo = ({ title }: Props) => {
-    const { meta, ogImage, profileImage }: SeoProps = useStaticQuery(graphql`
+    const { meta, ogImage }: SeoProps = useStaticQuery(graphql`
         query MetaQuery {
             meta: site {
                 ...MetaData
