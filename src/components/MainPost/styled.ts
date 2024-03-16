@@ -18,6 +18,9 @@ export const Wrapper = styled.div`
     &:hover {
         transform: scale(1.015);
     }
+    @media ${MEDIA_QUERY_MAX_WIDTH} {
+        flex-direction: column;
+    }
 `;
 
 export const Thumbnail = styled(GatsbyImage)`
@@ -26,7 +29,7 @@ export const Thumbnail = styled(GatsbyImage)`
     min-width: 190px;
     height: 170px;
     @media ${MEDIA_QUERY_MAX_WIDTH} {
-        display: none;
+        width: 100%;
     }
 `;
 
