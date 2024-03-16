@@ -7,7 +7,6 @@ export const SiteFragment = graphql`
             description
             siteUrl
             author
-            googleSiteVerification
         }
     }
 `;
