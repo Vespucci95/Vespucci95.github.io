@@ -22,7 +22,6 @@ const config: GatsbyConfig = {
             inputPosition: 'bottom',
             theme: 'light_tritanopia',
             lang: 'ko',
-            loading: 'lazy',
         },
     },
     graphqlTypegen: true,
