@@ -2,7 +2,7 @@ import { graphql, PageProps } from 'gatsby';
 import * as React from 'react';
 
 import MDXRender from '@/components/MDXRender';
-import { MarkdownRemark, MetaData, SiteMetaData } from 'GatsbyGraphQL';
+import { MarkdownRemark, MetaData } from 'GatsbyGraphQL';
 import PostNavigation from '@/components/PostNavigation';
 import Preface from '@/components/Preface';
 import Seo from '@/components/Seo';
