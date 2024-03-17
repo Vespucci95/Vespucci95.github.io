@@ -41,17 +41,21 @@ const TOC = styled.div`
     font-size: 0.875em;
     font-weight: 300;
     justify-content: center;
+
     a {
         color: ${({ theme }) => theme.color.gray300};
     }
+
     ul {
         display: flex;
         flex-direction: column;
         gap: 4px;
+
         li {
             margin-left: 10px;
         }
     }
+
     @media ${MEDIA_QUERY_MAX_WIDTH} {
         display: none;
     }
@@ -66,7 +70,6 @@ const PostLayout: React.FC<PageProps> = ({ data }) => {
             siteMetadata: { giscus },
         },
     } = data as Props;
-    const result = Utils.HashTag.create(post.html);
     const { thumbnail } = post.frontmatter;
     return (
         <Layout>
@@ -88,7 +91,7 @@ const PostLayout: React.FC<PageProps> = ({ data }) => {
                             categories={post.frontmatter.categories}
                         />
                         <div className="markdown">
-                            <MDXRender html={result} />
+                            <MDXRender html={Utils.createHashTag(post.html)} />
                         </div>
                         <PostNavigation prevPost={prev} nextPost={next} />
                         <Giscus {...giscus} />
