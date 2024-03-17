@@ -12,9 +12,9 @@ const config: GatsbyConfig = {
         giscus: {
             id: 'comments',
             repo: 'Vespucci95/Vespucci95.github.io',
-            repoId: 'R_kgDOJ7OqQA',
+            repoId: 'R_kgDOLf3Y2Q',
             category: 'Comments',
-            categoryId: 'DIC_kwDOJ7OqQM4CYj8Y',
+            categoryId: 'DIC_kwDOLf3Y2c4CeCH6',
             mapping: 'pathname',
             strict: '0',
             reactionsEnabled: '1',
