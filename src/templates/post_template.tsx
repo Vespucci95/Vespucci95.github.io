@@ -2,7 +2,7 @@ import { graphql, PageProps } from 'gatsby';
 import * as React from 'react';
 
 import MDXRender from '@/components/MDXRender';
-import { MarkdownRemark } from 'GatsbyGraphQL';
+import { MarkdownRemark, MetaData, SiteMetaData } from 'GatsbyGraphQL';
 import PostNavigation from '@/components/PostNavigation';
 import Preface from '@/components/Preface';
 import Seo from '@/components/Seo';
@@ -13,8 +13,10 @@ import TwoColumnLayout from '@/components/TwoColumnLayout';
 import styled from '@emotion/styled';
 import { INNER } from '@/constants';
 import { MEDIA_QUERY_MAX_WIDTH } from '@/styles/Theme';
+import Giscus from '@giscus/react';
 
 type Props = {
+    giscus: MetaData;
     post: MarkdownRemark;
     prev: MarkdownRemark;
     next: MarkdownRemark;
@@ -56,7 +58,14 @@ const TOC = styled.div`
 `;
 
 const PostLayout: React.FC<PageProps> = ({ data }) => {
-    const { post, prev, next } = data as Props;
+    const {
+        post,
+        prev,
+        next,
+        giscus: {
+            siteMetadata: { giscus },
+        },
+    } = data as Props;
     const result = Utils.HashTag.create(post.html);
     const { thumbnail } = post.frontmatter;
     return (
@@ -82,6 +91,7 @@ const PostLayout: React.FC<PageProps> = ({ data }) => {
                             <MDXRender html={result} />
                         </div>
                         <PostNavigation prevPost={prev} nextPost={next} />
+                        <Giscus {...giscus} />
                     </Content>
                 }
                 rightColumn={<TOC dangerouslySetInnerHTML={{ __html: post.tableOfContents }} />}
@@ -100,6 +110,25 @@ export const Head = ({
 
 export const query = graphql`
     query PostDetailBySlug($slug: String, $nextSlug: String, $prevSlug: String) {
+        giscus: site {
+            siteMetadata {
+                giscus {
+                    id
+                    repo
+                    repoId
+                    category
+                    categoryId
+                    mapping
+                    strict
+                    reactionsEnabled
+                    emitMetadata
+                    inputPosition
+                    theme
+                    lang
+                    loading
+                }
+            }
+        }
         post: markdownRemark(fields: { slug: { eq: $slug } }) {
             id
             html

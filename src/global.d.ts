@@ -1,5 +1,6 @@
 declare module 'GatsbyGraphQL' {
     import { IGatsbyImageData } from 'gatsby-plugin-image';
+    import { GiscusProps } from '@giscus/react';
 
     interface Frontmatter {
         readonly title: string;
@@ -52,6 +53,7 @@ declare module 'GatsbyGraphQL' {
         readonly description: string;
         readonly siteUrl: string;
         readonly author: string;
+        readonly giscus: GiscusProps;
     }
     interface MetaData {
         siteMetadata: SiteMetaData;
