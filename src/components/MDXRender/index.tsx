@@ -65,6 +65,12 @@ const MarkdownRenderer = styled.div`
         font-size: 1.1em;
         font-weight: 300;
     }
+
+    p {
+        margin-bottom: 0.825em;
+        line-height: 1.5;
+    }
+
     ul {
         padding-left: 2em;
         list-style-type: '– ';

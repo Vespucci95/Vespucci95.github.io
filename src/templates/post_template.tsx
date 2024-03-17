@@ -91,7 +91,7 @@ const PostLayout: React.FC<PageProps> = ({ data }) => {
                             categories={post.frontmatter.categories}
                         />
                         <div className="markdown">
-                            <MDXRender html={Utils.convertPostFormatMDX(post.html)} />
+                            <MDXRender html={Utils.convertHashTag(post.html)} />
                         </div>
                         <PostNavigation prevPost={prev} nextPost={next} />
                         <Giscus {...giscus} />

@@ -5,11 +5,4 @@ export const Utils = {
             return `<a href="/hashtag/${tagName}">${val}</a>`;
         });
     },
-    convertBrTag(html: string) {
-        return html.replace(/[\r\n]/gm, '<br />');
-    },
-    convertPostFormatMDX(html: string) {
-        const hashTagHTML = this.convertHashTag(html);
-        return this.convertBrTag(hashTagHTML);
-    },
 };
