@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024/1.md",
+                "file": "2024/2.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024/1.md",
+                "file": "2024/2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024/1.md",
+                "file": "2024/2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024/1.md"
+                "file": "2024/2.md"
               }
             }
           },
@@ -156,11 +156,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "27226cab17a7e8e7",
+  "active": "79e8210e8f2574f0",
   "lastOpenFiles": [
+    "2024/1.md",
     "media/brick.png",
     "2024/2.md",
-    "2024/1.md",
     "media/img-1.jpg",
     "2024/react-native-1.md",
     "media/temp.png",
@@ -173,7 +173,6 @@
     "media/img-2.jpg",
     "Pasted.md",
     "feed-gif-hd-01.md",
-    "2024/media/Pasted image 20240318032035.png",
     "img-1.png.md",
     "2024/media",
     "tips/4.md",
