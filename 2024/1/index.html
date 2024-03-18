@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.13.3"/><meta lang="ko" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta http-equiv="content-type" content="text/html; charset=UTF-8" data-gatsby-head="true"/><meta name="viewport" content="width=device-width, initial-scale=1.0" data-gatsby-head="true"/><meta name="description" content="frontend developer" data-gatsby-head="true"/><meta property="og:title" content="이현서 | 테스트 글 첫 번째" data-gatsby-head="true"/><meta property="og:description" content="frontend developer" data-gatsby-head="true"/><meta property="og:image" content="/static/13fecdb7d0071ec7089729ab6475fbe1/og-image.png" data-gatsby-head="true"/><meta property="og:site_name" content="이현서 | 테스트 글 첫 번째" data-gatsby-head="true"/><meta property="og:site_title" content="이현서 | 테스트 글 첫 번째" data-gatsby-head="true"/><meta property="og:author" content="이현서" data-gatsby-head="true"/><meta name="twitter:card" content="summary" data-gatsby-head="true"/><meta name="twitter:title" content="이현서 | 테스트 글 첫 번째" data-gatsby-head="true"/><meta name="twitter:description" content="frontend developer" data-gatsby-head="true"/><meta name="twitter:image" content="https://vespucci95.github.io" data-gatsby-head="true"/><meta name="google-site-verification" content="NRo4yKk2rmtkRhrG_L6RCXb1Jcw8VZwg6beWfo3U2t0" data-gatsby-head="true"/><meta name="naver-site-verification" content="bad4dc83cef571597393ea6e13eed3807d2b3a7f" data-gatsby-head="true"/><meta name="twitter:site" content="Vespucci95" data-gatsby-head="true"/><meta name="twitter:creator" content="Vespucci95" data-gatsby-head="true"/><style data-href="/styles.671287538b6120d372f6.css" data-identity="gatsby-global-css">@import url(https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css);@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap);@import url(https://fonts.cdnfonts.com/css/morena);
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.13.3"/><meta lang="ko" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta http-equiv="content-type" content="text/html; charset=UTF-8" data-gatsby-head="true"/><meta name="viewport" content="width=device-width, initial-scale=1.0" data-gatsby-head="true"/><meta name="description" content="frontend developer" data-gatsby-head="true"/><meta property="og:title" content="이현서 | ReactNative 피드 목록 성능 개선 후기" data-gatsby-head="true"/><meta property="og:description" content="frontend developer" data-gatsby-head="true"/><meta property="og:image" content="/static/13fecdb7d0071ec7089729ab6475fbe1/og-image.png" data-gatsby-head="true"/><meta property="og:site_name" content="이현서 | ReactNative 피드 목록 성능 개선 후기" data-gatsby-head="true"/><meta property="og:site_title" content="이현서 | ReactNative 피드 목록 성능 개선 후기" data-gatsby-head="true"/><meta property="og:author" content="이현서" data-gatsby-head="true"/><meta name="twitter:card" content="summary" data-gatsby-head="true"/><meta name="twitter:title" content="이현서 | ReactNative 피드 목록 성능 개선 후기" data-gatsby-head="true"/><meta name="twitter:description" content="frontend developer" data-gatsby-head="true"/><meta name="twitter:image" content="https://vespucci95.github.io" data-gatsby-head="true"/><meta name="google-site-verification" content="NRo4yKk2rmtkRhrG_L6RCXb1Jcw8VZwg6beWfo3U2t0" data-gatsby-head="true"/><meta name="naver-site-verification" content="bad4dc83cef571597393ea6e13eed3807d2b3a7f" data-gatsby-head="true"/><meta name="twitter:site" content="Vespucci95" data-gatsby-head="true"/><meta name="twitter:creator" content="Vespucci95" data-gatsby-head="true"/><style data-href="/styles.671287538b6120d372f6.css" data-identity="gatsby-global-css">@import url(https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css);@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap);@import url(https://fonts.cdnfonts.com/css/morena);
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */blockquote,body,dd,dl,dt,fieldset,figure,h1,h2,h3,h4,h5,h6,hr,html,iframe,legend,li,ol,p,pre,textarea,ul{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}:root{overflow-wrap:break-word;word-break:break-word}*{appearance:none;-webkit-appearance:none;box-sizing:border-box}html{font-family:Pretendard,Noto Sans KR,Noto Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:16px;font-weight:300;line-height:1.5}body{margin:0;padding:0}@keyframes sunShadow{0%{text-shadow:0 0 15px rgba(225,157,63,.8)}to{text-shadow:0 0 20px rgba(225,157,63,.8)}}@keyframes moonShadow{0%{text-shadow:0 0 15px hsla(52,91%,78%,.8)}to{text-shadow:0 0 20px hsla(52,91%,78%,.8)}}.markdown{display:flex;flex-direction:column;margin:0 auto;width:100%}.markdown code[class*=language-],.markdown pre[class*=language-]{word-wrap:normal;background:none;color:#acb2be;font-family:JetBrains Mono,Pretendard,sans-serif;font-size:.875em;font-weight:300;-webkit-hyphens:none;hyphens:none;line-height:1.5;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}.markdown pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em 1.2em}.markdown :not(pre)>code[class*=language-],.markdown pre[class*=language-]{background:#292c33;border-radius:12px}.markdown :not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.markdown .token.block-comment,.markdown .token.cdata,.markdown .token.comment,.markdown .token.doctype,.markdown .token.prolog{color:#999}.markdown .token.punctuation{color:#dfbb52}.markdown .token.attr-name,.markdown .token.deleted,.markdown .token.namespace,.markdown .token.tag{color:#bb9269}.markdown .token.boolean,.markdown .token.function,.markdown .token.function-name,.markdown .token.number{color:#74ade9}.markdown .token.class-name,.markdown .token.constant,.markdown .token.property,.markdown .token.symbol{color:#5cbaa5}.markdown .token.atrule,.markdown .token.builtin,.markdown .token.important,.markdown .token.keyword,.markdown .token.selector{color:#bc7cd7}.markdown .token.attr-value,.markdown .token.char,.markdown .token.regex,.markdown .token.string,.markdown .token.variable{color:#a1c281}.markdown .token.entity,.markdown .token.operator,.markdown .token.url{color:#acb2be}.markdown .token.bold,.markdown .token.important{font-weight:700}.markdown .token.italic{font-style:italic}.markdown .token.entity{cursor:help}.markdown .token.inserted{color:#98b87b}main .markdown code[class*=language-text]{background:#292c33;border-radius:4px;color:#fff;font-size:.9em;font-weight:300;padding:.15em .5em}</style><link rel="canonical" href="null//null%3Chttps://vespucci95.github.io/%3E/2024/1/"/><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><style type="text/css">
     .post-toc.before {
       position: absolute;
@@ -49,202 +49,243 @@
         }
       }
     })
-  </script><link rel="preconnect" href="https://www.googletagmanager.com"/><link rel="dns-prefetch" href="https://www.googletagmanager.com"/><link rel="icon" href="/favicon-32x32.png?v=d8347136995a909cdbd8f31e86c7cf42" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8347136995a909cdbd8f31e86c7cf42"/><title data-gatsby-head="true">이현서 | 테스트 글 첫 번째</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion="css-global hd3rxz">html{background:#FFF;}@media (max-width: 768px){html{font-size:14px;line-height:1.2;}}a{-webkit-text-decoration:unset;text-decoration:unset;color:#4078c0;}p{color:#000;}</style><style data-emotion="css 10ox5sj">.css-10ox5sj{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:34px 0 27px 0;border-bottom:1px solid rgba(0,0,0,0.2);width:100%;}@media (max-width: 768px){.css-10ox5sj{font-size:0.825em;}}</style><div class="css-10ox5sj e11tl5h13"><style data-emotion="css 1hs2jf6">.css-1hs2jf6{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:0 auto;padding:0 12px;width:100%;max-width:980px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}</style><header class="css-1hs2jf6 e11tl5h14"><style data-emotion="css 1bfvnfi">.css-1bfvnfi{font-family:Morena,Pretendard,sans-serif;font-size:1.5em;font-weight:700;text-align:justify;text-transform:uppercase;color:#000;}</style><a class="css-1bfvnfi e11tl5h12" href="/">Hyunseo</a><style data-emotion="css 1l3mmsf">.css-1l3mmsf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;gap:20px;}</style><div class="css-1l3mmsf e11tl5h11"><style data-emotion="css sp2qwy">.css-sp2qwy{font-family:Pretendard,sans-serif;font-size:1em;font-weight:200;text-transform:uppercase;color:#000;padding-bottom:4px;}</style><a class="css-sp2qwy e11tl5h10" href="/hashtag/">HashTags</a></div></header></div><style data-emotion="css vj2n20">.css-vj2n20{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:980px;min-height:100vh;margin:0 auto;padding:20px 0 60px 0;-webkit-flex:1;-ms-flex:1;flex:1;box-sizing:border-box;}@media (max-width: 768px){.css-vj2n20{padding:10px 0 40px 0;}}</style><main class="css-vj2n20 eksmgv0"><style data-emotion="css 1bg9v7r">.css-1bg9v7r{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;gap:15px;}@media (max-width: 768px){.css-1bg9v7r{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}}</style><div class="css-1bg9v7r e3jy6gn2"><style data-emotion="css 1g1oew2">.css-1g1oew2{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}</style><div class="css-1g1oew2 e3jy6gn1"><style data-emotion="css cw8w8g">.css-cw8w8g{padding:10px 12px;}</style><div class="css-cw8w8g evu0g1r2"><style data-emotion="css 2zp8jd">.css-2zp8jd{width:100%;height:360px;border-radius:12px;margin-bottom:48px;}</style><div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained css-2zp8jd evu0g1r1"><div style="max-width:200px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg%20height=&#x27;300&#x27;%20width=&#x27;200&#x27;%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#b8b8a8;position:absolute;top:0;left:0;bottom:0;right:0"></div><picture><source type="image/webp" data-srcset="/static/96feee08446dde16fceb394ff2d00f68/3aa0d/img-1.webp 50w,/static/96feee08446dde16fceb394ff2d00f68/f2cb4/img-1.webp 100w,/static/96feee08446dde16fceb394ff2d00f68/f9911/img-1.webp 200w,/static/96feee08446dde16fceb394ff2d00f68/3d164/img-1.webp 400w" sizes="(min-width: 200px) 200px, 100vw"/><img data-gatsby-image-ssr="" draggable="false" data-main-image="" style="opacity:0" sizes="(min-width: 200px) 200px, 100vw" decoding="async" loading="lazy" data-src="/static/96feee08446dde16fceb394ff2d00f68/38177/img-1.jpg" data-srcset="/static/96feee08446dde16fceb394ff2d00f68/68b0e/img-1.jpg 50w,/static/96feee08446dde16fceb394ff2d00f68/d6f53/img-1.jpg 100w,/static/96feee08446dde16fceb394ff2d00f68/38177/img-1.jpg 200w,/static/96feee08446dde16fceb394ff2d00f68/18869/img-1.jpg 400w" alt="테스트 글 첫 번째"/></picture><noscript><picture><source type="image/webp" srcSet="/static/96feee08446dde16fceb394ff2d00f68/3aa0d/img-1.webp 50w,/static/96feee08446dde16fceb394ff2d00f68/f2cb4/img-1.webp 100w,/static/96feee08446dde16fceb394ff2d00f68/f9911/img-1.webp 200w,/static/96feee08446dde16fceb394ff2d00f68/3d164/img-1.webp 400w" sizes="(min-width: 200px) 200px, 100vw"/><img data-gatsby-image-ssr="" draggable="false" data-main-image="" style="opacity:0" sizes="(min-width: 200px) 200px, 100vw" decoding="async" loading="lazy" src="/static/96feee08446dde16fceb394ff2d00f68/38177/img-1.jpg" srcSet="/static/96feee08446dde16fceb394ff2d00f68/68b0e/img-1.jpg 50w,/static/96feee08446dde16fceb394ff2d00f68/d6f53/img-1.jpg 100w,/static/96feee08446dde16fceb394ff2d00f68/38177/img-1.jpg 200w,/static/96feee08446dde16fceb394ff2d00f68/18869/img-1.jpg 400w" alt="테스트 글 첫 번째"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><style data-emotion="css ib7rvb">.css-ib7rvb{width:100%;margin-bottom:4em;}</style><div class="css-ib7rvb ewrdxjg5"><style data-emotion="css 1qu918n">.css-1qu918n{margin-bottom:0.5em;font-size:1.75em;line-height:1.14;font-weight:200;color:#000;}</style><h1 class="css-1qu918n ewrdxjg4">테스트 글 첫 번째</h1><style data-emotion="css 1nrstx4">.css-1nrstx4{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}</style><div class="css-1nrstx4 ewrdxjg1"><style data-emotion="css 1r4dr8c">.css-1r4dr8c{font-size:1em;font-weight:200;color:#939393;}</style><p class="css-1r4dr8c ewrdxjg2">TypeScript<!-- --> ∣ #타입체커</p><style data-emotion="css 11yr3db">.css-11yr3db{font-size:0.875em;font-weight:200;color:#939393;white-space:nowrap;}</style><p class="css-11yr3db ewrdxjg3">2024.03.16</p></div></div><div class="markdown"><style data-emotion="css qdr8kj">.css-qdr8kj *{line-height:1.6;}.css-qdr8kj h1,.css-qdr8kj h2,.css-qdr8kj h3,.css-qdr8kj h4,.css-qdr8kj h5,.css-qdr8kj h6,.css-qdr8kj p,.css-qdr8kj li{color:#000;}.css-qdr8kj h1,.css-qdr8kj h2,.css-qdr8kj h3{margin-top:1.25em;line-height:1.14;}.css-qdr8kj h1{margin-bottom:0.4em;font-size:2em;font-weight:300;}.css-qdr8kj h1:first-child{margin-top:unset;}.css-qdr8kj h2{margin-bottom:0.3em;font-size:1.8em;font-weight:300;}.css-qdr8kj h2:first-child{margin-top:unset;}.css-qdr8kj h3{margin-bottom:0.25em;font-size:1.5em;font-weight:300;}.css-qdr8kj h3:first-child{margin-top:unset;}.css-qdr8kj h4{margin-bottom:0.2em;font-size:1.375em;font-weight:300;}.css-qdr8kj h5{font-size:1.3em;font-weight:300;}.css-qdr8kj h6{font-size:1.1em;font-weight:300;}.css-qdr8kj p{margin-bottom:0.825em;line-height:1.5;}.css-qdr8kj ul{padding-left:2em;list-style-type:'– ';}.css-qdr8kj ol{padding-left:2em;}.css-qdr8kj li:last-child{margin-bottom:1em;}.css-qdr8kj img{pointer-events:none;display:block;margin:0 auto;position:relative;}.css-qdr8kj img::before{content:'😎 이미지 휴가 중: 다녀올 때까지 기다려주세요. 🏖️🌴';display:block;overflow:hidden;width:100%;height:100%;background:#FFF;position:absolute;left:0;top:0;text-align:center;-webkit-text-decoration:line-through;text-decoration:line-through;color:#999;}.css-qdr8kj table{width:100%;border:1px solid #000;border-collapse:collapse;}.css-qdr8kj th,.css-qdr8kj td{color:#000;border:1px solid #000;}.css-qdr8kj th{padding:4px 0;font-weight:300;}.css-qdr8kj td{padding:2px 10px;}.css-qdr8kj hr{margin:2.5em 0;}.css-qdr8kj strong{font-weight:500;}</style><div class="css-qdr8kj e1hpraxr0"><h1 id="테스트-글-입니다" style="position:relative;"><a href="#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B8%80-%EC%9E%85%EB%8B%88%EB%8B%A4" aria-label="테스트 글 입니다 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테스트 글 입니다.</h1>
-<h1 id="아이템-1-타입스크립트와-자바스크립트의-관계-이해하기" style="position:relative;"><a href="#%EC%95%84%EC%9D%B4%ED%85%9C-1-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%99%80-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%EA%B4%80%EA%B3%84-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0" aria-label="아이템 1 타입스크립트와 자바스크립트의 관계 이해하기 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>아이템 1 타입스크립트와 자바스크립트의 관계 이해하기</h1>
-<blockquote>
-<p>타입스크립트는 자바스크립트의 상위 집합이다.
-모든 자바스크립트 프로그램은 이미 타입스크립트 프로그램이다.
-반대로 타입스크립트는 별도의 문법을 가지고 있기 때문에 유효한 자바스크립트 프로그램이 아니다.</p>
-</blockquote>
-<p>main.js 를 main.ts 로 바꾼다고 해서 달라지는 것은 없다.
-하지만 그 반대의 경우는 성립하지 않는다.</p>
-<blockquote>
-<p>타입스크립트는 런타임 오류를 발생시키는 코드를 찾아내려고 한다.
-그러나 모든 오류를 찾아내리라 기대하면 안된다.
-타입 체커를 통과하면서도 런타입 오류를 발생시키는 코드는 충분히 존재할 수 있다.</p>
-</blockquote>
-<blockquote>
-<p>타입스크립트 타입 시스템은 전반적으로 자바스크립트 동작을 모델링한다.
-그러나 잘못된 매개변수 개수로 함수를 호출하는 경우처럼,
-자바스크립트에서는 허용되지만 타입스크립트에서는 문제가 되는 경우도 있다.
-이러한 문법의 엄격함은 온전히 취향 차이이며 우열을 가릴 수 없는 문제다.</p>
-</blockquote>
-<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token string">'3'</span> <span class="token comment">// OK, type is string  </span>
-<span class="token keyword">const</span> y <span class="token operator">=</span> <span class="token string">'2'</span> <span class="token operator">+</span> <span class="token number">3</span> <span class="token comment">// OK, type is string</span></code></pre></div>
-<p><a href="/hashtag/%ED%83%80%EC%9E%85%EC%B2%B4%EC%BB%A4">#타입체커</a> 는 정상으로 본다.</p>
-<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token keyword">null</span> <span class="token operator">+</span> <span class="token number">7</span> <span class="token comment">// Evaluates to 7 in JS  </span>
-<span class="token comment">// ~~~~ Operator '+' cannot be applied to types ...  </span>
-<span class="token keyword">const</span> b <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">12</span> <span class="token comment">// Evaluates to '12' in JS  </span>
-<span class="token comment">// ~~~~~~~ Operator '+' cannot be applied to types ...  </span>
-<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Hello'</span><span class="token punctuation">,</span> <span class="token string">'TypeScript'</span><span class="token punctuation">)</span> <span class="token comment">// alerts "Hello"  </span>
-<span class="token comment">// ~~~~~~~~~~~~ Expected 0-1 arguments, but got 2  </span></code></pre></div>
-<p>반대로 위 예제는 오류를 표시한다.
-런타임 오류가 발생하지 않지만, 타입 체커는 문제점을 표시한다.</p>
-<h1 id="아이템-2-타입스크립트-설정-이해하기" style="position:relative;"><a href="#%EC%95%84%EC%9D%B4%ED%85%9C-2-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%84%A4%EC%A0%95-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0" aria-label="아이템 2 타입스크립트 설정 이해하기 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>아이템 2 타입스크립트 설정 이해하기</h1>
-<blockquote>
-<p>타입스크립트 설정은 커맨드라인보다는 <code class="language-text">tsconfig.json</code>을 사용하자.</p>
-</blockquote>
-<blockquote>
-<p>자바스크립트 > 타입스크립트로 전환하는게 아니라면 <code class="language-text">noImplicitAny</code> 를 설정하자.</p>
-</blockquote>
-<blockquote>
-<p><code class="language-text">noImplicitAny</code>, <code class="language-text">strictNullChecks</code>, <code class="language-text">strict</code>를 설정하는 것이 좋다.</p>
-</blockquote>
-<h1 id="아이템-3-코드-생성과-타입이-관계없음을-이해하기" style="position:relative;"><a href="#%EC%95%84%EC%9D%B4%ED%85%9C-3-%EC%BD%94%EB%93%9C-%EC%83%9D%EC%84%B1%EA%B3%BC-%ED%83%80%EC%9E%85%EC%9D%B4-%EA%B4%80%EA%B3%84%EC%97%86%EC%9D%8C%EC%9D%84-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0" aria-label="아이템 3 코드 생성과 타입이 관계없음을 이해하기 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>아이템 3 코드 생성과 타입이 관계없음을 이해하기</h1>
-<blockquote>
-<p>코드 생성은 타입 시스템과 무관하다.
-타입스크립트 타입은 런타임 동작이나 성능에 영향을 주지 않는다.</p>
-</blockquote>
-<p>타입스크립트 컴파일러는 두 가지 역할을 수행한다.</p>
+  </script><link rel="preconnect" href="https://www.googletagmanager.com"/><link rel="dns-prefetch" href="https://www.googletagmanager.com"/><link rel="icon" href="/favicon-32x32.png?v=d8347136995a909cdbd8f31e86c7cf42" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8347136995a909cdbd8f31e86c7cf42"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8347136995a909cdbd8f31e86c7cf42"/><title data-gatsby-head="true">이현서 | ReactNative 피드 목록 성능 개선 후기</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion="css-global hd3rxz">html{background:#FFF;}@media (max-width: 768px){html{font-size:14px;line-height:1.2;}}a{-webkit-text-decoration:unset;text-decoration:unset;color:#4078c0;}p{color:#000;}</style><style data-emotion="css 10ox5sj">.css-10ox5sj{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:34px 0 27px 0;border-bottom:1px solid rgba(0,0,0,0.2);width:100%;}@media (max-width: 768px){.css-10ox5sj{font-size:0.825em;}}</style><div class="css-10ox5sj e11tl5h13"><style data-emotion="css 1hs2jf6">.css-1hs2jf6{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:0 auto;padding:0 12px;width:100%;max-width:980px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}</style><header class="css-1hs2jf6 e11tl5h14"><style data-emotion="css 1bfvnfi">.css-1bfvnfi{font-family:Morena,Pretendard,sans-serif;font-size:1.5em;font-weight:700;text-align:justify;text-transform:uppercase;color:#000;}</style><a class="css-1bfvnfi e11tl5h12" href="/">Hyunseo</a><style data-emotion="css 1l3mmsf">.css-1l3mmsf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;gap:20px;}</style><div class="css-1l3mmsf e11tl5h11"><style data-emotion="css sp2qwy">.css-sp2qwy{font-family:Pretendard,sans-serif;font-size:1em;font-weight:200;text-transform:uppercase;color:#000;padding-bottom:4px;}</style><a class="css-sp2qwy e11tl5h10" href="/hashtag/">HashTags</a></div></header></div><style data-emotion="css vj2n20">.css-vj2n20{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:980px;min-height:100vh;margin:0 auto;padding:20px 0 60px 0;-webkit-flex:1;-ms-flex:1;flex:1;box-sizing:border-box;}@media (max-width: 768px){.css-vj2n20{padding:10px 0 40px 0;}}</style><main class="css-vj2n20 eksmgv0"><style data-emotion="css 1bg9v7r">.css-1bg9v7r{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;gap:15px;}@media (max-width: 768px){.css-1bg9v7r{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}}</style><div class="css-1bg9v7r e3jy6gn2"><style data-emotion="css 1g1oew2">.css-1g1oew2{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}</style><div class="css-1g1oew2 e3jy6gn1"><style data-emotion="css cw8w8g">.css-cw8w8g{padding:10px 12px;}</style><div class="css-cw8w8g evu0g1r2"><style data-emotion="css 2zp8jd">.css-2zp8jd{width:100%;height:360px;border-radius:12px;margin-bottom:48px;}</style><div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained css-2zp8jd evu0g1r1"><div style="max-width:200px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg%20height=&#x27;111&#x27;%20width=&#x27;200&#x27;%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#282828;position:absolute;top:0;left:0;bottom:0;right:0"></div><picture><source type="image/webp" data-srcset="/static/834b1ef3144d21298d99dbc92f577594/99e23/brick.webp 50w,/static/834b1ef3144d21298d99dbc92f577594/c36d9/brick.webp 100w,/static/834b1ef3144d21298d99dbc92f577594/a9f32/brick.webp 200w,/static/834b1ef3144d21298d99dbc92f577594/467d3/brick.webp 400w" sizes="(min-width: 200px) 200px, 100vw"/><img data-gatsby-image-ssr="" draggable="false" data-main-image="" style="opacity:0" sizes="(min-width: 200px) 200px, 100vw" decoding="async" loading="lazy" data-src="/static/834b1ef3144d21298d99dbc92f577594/d0741/brick.png" data-srcset="/static/834b1ef3144d21298d99dbc92f577594/f1f8a/brick.png 50w,/static/834b1ef3144d21298d99dbc92f577594/e9473/brick.png 100w,/static/834b1ef3144d21298d99dbc92f577594/d0741/brick.png 200w,/static/834b1ef3144d21298d99dbc92f577594/6759a/brick.png 400w" alt="ReactNative 피드 목록 성능 개선 후기"/></picture><noscript><picture><source type="image/webp" srcSet="/static/834b1ef3144d21298d99dbc92f577594/99e23/brick.webp 50w,/static/834b1ef3144d21298d99dbc92f577594/c36d9/brick.webp 100w,/static/834b1ef3144d21298d99dbc92f577594/a9f32/brick.webp 200w,/static/834b1ef3144d21298d99dbc92f577594/467d3/brick.webp 400w" sizes="(min-width: 200px) 200px, 100vw"/><img data-gatsby-image-ssr="" draggable="false" data-main-image="" style="opacity:0" sizes="(min-width: 200px) 200px, 100vw" decoding="async" loading="lazy" src="/static/834b1ef3144d21298d99dbc92f577594/d0741/brick.png" srcSet="/static/834b1ef3144d21298d99dbc92f577594/f1f8a/brick.png 50w,/static/834b1ef3144d21298d99dbc92f577594/e9473/brick.png 100w,/static/834b1ef3144d21298d99dbc92f577594/d0741/brick.png 200w,/static/834b1ef3144d21298d99dbc92f577594/6759a/brick.png 400w" alt="ReactNative 피드 목록 성능 개선 후기"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><style data-emotion="css ib7rvb">.css-ib7rvb{width:100%;margin-bottom:4em;}</style><div class="css-ib7rvb ewrdxjg5"><style data-emotion="css 1qu918n">.css-1qu918n{margin-bottom:0.5em;font-size:1.75em;line-height:1.14;font-weight:200;color:#000;}</style><h1 class="css-1qu918n ewrdxjg4">ReactNative 피드 목록 성능 개선 후기</h1><style data-emotion="css 1nrstx4">.css-1nrstx4{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}</style><div class="css-1nrstx4 ewrdxjg1"><style data-emotion="css 1r4dr8c">.css-1r4dr8c{font-size:1em;font-weight:200;color:#939393;}</style><p class="css-1r4dr8c ewrdxjg2">ReactNative<!-- --> ∣ #ReactNative, #렌더링</p><style data-emotion="css 11yr3db">.css-11yr3db{font-size:0.875em;font-weight:200;color:#939393;white-space:nowrap;}</style><p class="css-11yr3db ewrdxjg3">2023.07.27</p></div></div><div class="markdown"><style data-emotion="css qdr8kj">.css-qdr8kj *{line-height:1.6;}.css-qdr8kj h1,.css-qdr8kj h2,.css-qdr8kj h3,.css-qdr8kj h4,.css-qdr8kj h5,.css-qdr8kj h6,.css-qdr8kj p,.css-qdr8kj li{color:#000;}.css-qdr8kj h1,.css-qdr8kj h2,.css-qdr8kj h3{margin-top:1.25em;line-height:1.14;}.css-qdr8kj h1{margin-bottom:0.4em;font-size:2em;font-weight:300;}.css-qdr8kj h1:first-child{margin-top:unset;}.css-qdr8kj h2{margin-bottom:0.3em;font-size:1.8em;font-weight:300;}.css-qdr8kj h2:first-child{margin-top:unset;}.css-qdr8kj h3{margin-bottom:0.25em;font-size:1.5em;font-weight:300;}.css-qdr8kj h3:first-child{margin-top:unset;}.css-qdr8kj h4{margin-bottom:0.2em;font-size:1.375em;font-weight:300;}.css-qdr8kj h5{font-size:1.3em;font-weight:300;}.css-qdr8kj h6{font-size:1.1em;font-weight:300;}.css-qdr8kj p{margin-bottom:0.825em;line-height:1.5;}.css-qdr8kj ul{padding-left:2em;list-style-type:'– ';}.css-qdr8kj ol{padding-left:2em;}.css-qdr8kj li:last-child{margin-bottom:1em;}.css-qdr8kj img{pointer-events:none;display:block;margin:0 auto;position:relative;}.css-qdr8kj img::before{content:'😎 이미지 휴가 중: 다녀올 때까지 기다려주세요. 🏖️🌴';display:block;overflow:hidden;width:100%;height:100%;background:#FFF;position:absolute;left:0;top:0;text-align:center;-webkit-text-decoration:line-through;text-decoration:line-through;color:#999;}.css-qdr8kj table{width:100%;border:1px solid #000;border-collapse:collapse;}.css-qdr8kj th,.css-qdr8kj td{color:#000;border:1px solid #000;}.css-qdr8kj th{padding:4px 0;font-weight:300;}.css-qdr8kj td{padding:2px 10px;}.css-qdr8kj hr{margin:2.5em 0;}.css-qdr8kj strong{font-weight:500;}</style><div class="css-qdr8kj e1hpraxr0"><p>안녕하세요.</p>
+<p>ReactNative에서 Masonry 레이아웃 페이지의 성능을 개선했던 경험을 공유드리려고 합니다.
+어떤 점들을 개선하였고, 개선하기 위해 시도했던 방법들, 그리고 느낀 점들에 대해 말씀드리겠습니다.</p>
+<h2 id="들어가기-전에" style="position:relative;"><a href="#%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0-%EC%A0%84%EC%97%90" aria-label="들어가기 전에 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>들어가기 전에</h2>
+<p>당시 요구사항은 다음과 같았습니다.</p>
+<div class="gatsby-highlight" data-language="txt"><pre class="language-txt"><code class="language-txt">
+1. Pinterest와 같은 석조 레이아웃 (Masonry layout)
+
+2. instagram, KREAM(style)과 같은 피드 목록 페이지 (infinite scroll)
+</code></pre></div>
+<p>Masonry 레이아웃이란 많이 알려진 Pinterest 페이지와 같은 석조 레이아웃을 의미합니다.</p>
+<p><a href="https://apps.apple.com/kr/app/cate-%EC%BC%80%EC%9D%B4%ED%8A%B8/id6444556711" target="_blank" rel="nofollow">CATE</a> 앱은 아트 플랫폼으로써 피드(feed)라는 소통 공간이 필요하였습니다.
+아직 앱이 준비되기 이전이었기 때문에 새롭게 만들어야 했습니다.</p>
+<p>저는 최종적으로 위의 요구사항을 지키면서 피드 성능 개선을 위해 <strong>총 6번의 전환 과정</strong>을 시도하였는데요.
+제가 시도했던 방법들을 간략하게 말씀드리도록 하겠습니다.</p>
+<p>모든 과정이 한 번에 이루어진 것은 아니며, 계속 디벨롭해 나가며 진행되었다는 점을 미리 말씀드릴게요!</p>
+<h2 id="첫-번째-시도" style="position:relative;"><a href="#%EC%B2%AB-%EB%B2%88%EC%A7%B8-%EC%8B%9C%EB%8F%84" aria-label="첫 번째 시도 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>첫 번째 시도</h2>
+<p>첫 번째 요구사항에 맞추어 <a href="/hashtag/ReactNative">#ReactNative</a> 에서 활용할 수 있는 모든 라이브러리를 찾아보기 시작했습니다.</p>
+<p>가장 요구사항에 적합한 라이브러리 <a href="https://github.com/hyochan/react-native-masonry-list" target="_blank" rel="nofollow">react-native-masonry-list</a> 를 활용하고자 하였습니다.
+검토 당시 아쉽게도 사용 당시 몇 가지 문제점이 있었는데요.</p>
+<p>목록이 쌓일수록 높이 값을 계산하지 못해 우측에만 쌓이는 현상이 존재하였습니다. <a href="https://github.com/hyochan/react-native-masonry-list/issues/16" target="_blank" rel="nofollow">issue</a></p>
+<p>실무에 적용하기에는 어렵다고 생각되었고 다른 방법을 모색하게 됩니다.</p>
+<h2 id="두-번째-시도" style="position:relative;"><a href="#%EB%91%90-%EB%B2%88%EC%A7%B8-%EC%8B%9C%EB%8F%84" aria-label="두 번째 시도 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>두 번째 시도</h2>
+<p>기존에 시도하였던 react-native-masonry-list 구현 방식을 참고하여 ScrollView 를 이용한 석조형 레이아웃을 <strong>직접 구현</strong>하기로 합니다.</p>
+<p>react-native-masonry-list 또한 <a href="https://github.com/hyochan/react-native-masonry-list/blob/main/index.tsx" target="_blank" rel="nofollow">ScrollView로 구현</a>되어있어 적합한 방법이라고 생각하였습니다.
+우측에 쌓이는 현상만 해결하면 사용 가능해 보였기 때문입니다.</p>
+<p>구현 방식은 colum 수에 따라 데이터를 나누어서 레이아웃을 나누어 화면에 그려주었습니다.</p>
+<p>최종적으로 우측에 쌓이는 현상을 해결하였지만, 한 가지 큰 문제점이 존재하였는데요.</p>
+<p>ScrollView는 모든 요소를 한 번에 <a href="/hashtag/%EB%A0%8C%EB%8D%94%EB%A7%81">#렌더링</a> 하기 때문에 대용량의 데이터를 처리하기에는 옳지 않은 방법이었습니다.</p>
+<p>테스트 단계에서는 적은 양의 데이터를 처리했기 때문에 큰 이슈가 발생하지 않는 것처럼 보였는데요.
+iOS 환경에서의 퍼포먼스는 준수 한 편이었지만, Android 환경에서 점차 문제가 생기기 시작했습니다.</p>
+<p>이 또한 실무에 적용하기에 어렵다고 생각되었고 다른 방법을 모색하게 되었습니다.</p>
+<h2 id="세-번째-시도" style="position:relative;"><a href="#%EC%84%B8-%EB%B2%88%EC%A7%B8-%EC%8B%9C%EB%8F%84" aria-label="세 번째 시도 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>세 번째 시도</h2>
+<p>기존에 작업되어 있던 <strong>ScrollView를 FlatList로 전환</strong>을 시도하였습니다.</p>
+<p>FlatList는 많은 양의 데이터를 처리하기에 적합하기에 꼭 필요한 과정이었습니다.</p>
+<p>그렇다면 FlatList를 이용하여 어떻게 Masonry 레이아웃을 구현할 수 있을까요?</p>
+<p>우선 column을 나누어 렌더링 하려면 <code class="language-text">numColumns</code> 을 이용하면 됩니다.</p>
+<p>이후 저는 <code class="language-text">postion:'absolute'</code> 를 활용하여 Pinterest 와 같은 레이아웃을 그려주는 방법으로 시도하였는데요.</p>
+<p>이 또한 다른 문제점을 맞닥뜨리게 됩니다. <code class="language-text">onEndReached</code> 를 통해 다음 데이터를 불러오게 되면서 레이아웃이 무너지는 현상이 발생하였고 사용하기에는 불가능하다고 판단되었습니다.</p>
+<h2 id="네-번째-시도" style="position:relative;"><a href="#%EB%84%A4-%EB%B2%88%EC%A7%B8-%EC%8B%9C%EB%8F%84" aria-label="네 번째 시도 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>네 번째 시도</h2>
+<p><code class="language-text">numColumns</code> 와 <code class="language-text">postion:'absolute'</code> 를 활용한 방법을 버리고 <code class="language-text">CellRendererComponent</code> 활용한 석조 레이아웃을 구현하기로 합니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 728px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/518c71dff7b54ffbb0c4b96434720e8c/0b3a5/cate-feed-01.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 216.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAArCAYAAAB4pah1AAAACXBIWXMAABYlAAAWJQFJUiTwAAAHIklEQVR42qVXe3BTdRa+adNCuwujQEtt0dXxH8cHrDLDog5LebVAeSrgaHFXVxRYaQtFgTZ9JKlFoeAujICPHXkVKDCMvBSEIqA7rqytTRqapg/I8+bmnTTvpIVvz71p3IWW3dT945tzX7/vd+455zvnXoaRisBDVE3YmASmInb+vyCqImwSQSxJQdbOh5Bck4I0+XAwyTViJMuTkVIuxrC3UpG6QQwxnYul/ZDRfcIdhHIRkkpp82IGaWW/wuQT+Uj7YCSGyVLBMOsZMOWEKkJ1v628CxJmcE/l/aiIrUuvSQezbu86lB5YDUn9n1BWv4LsClQcehNlh95COR1vPLoGq46vjj1MG4qkSQOIk2TJwj3hGfVNHawHP4byjwW4WbIcuk2r0C0pgnrdCihfK0Dw0Mf4UaPC6M2jBC8GIxQQJ2zp1KBpexWqHs/GyYXPo2D6NMybMR0nFkxC3YRsqP4qxRXV97i/9r57engHoaJDg58++gA3FjyJw0umIX/ZSyh4qRANL89D6/zfomunHFeU32NU7f2JEbao23BthxxHZz0FyXNPY/mM3+PPC6dClvsEduc9iYvb5fiu+Sru4wkTeuXWFnyxTYo3fjcBec+Mx+TcAsyYcRaPPnIE0x95FYe3SnC16XLihM0qBb6lRaueeQwfzp2M16fNxwOjXRg1Fng051Oc37Ye3zZ/NwQP29vw45YynHv2Nzg1ewJ25D6N0omFeHfiCtRPmgzNh2W42vpDLIaJEF67rsA/Nr+D05OyUTN9AiqefQwrJ47DqfyHcGnKAzDUbUCj4u/IfH+MsDBFnkpKShkAvhZH1o4Eo9Vy0Ozahob5U3H8lXnYv3gmvliWh0+WzEf9opkwfboDCiqt0TLycBN5WC6KKetulJEMK0nLq4+vwvLPCzF352LM3b0Ecz56EQVkF+5ZggW7XsSr+/+A4hNFqDhXjqoLFT+j8muJYKsvVKL6ItVxYyVqv6khLUv69Srt13LcCjUnEnScUZsBltPidjCCiM+PqD+IqC/ws+0NhNAbDONWKELdhjpJEnWVwZAsFQuJyNo6Fm06BewOM8wWPSw2Eyx2E6wOlo6NguVhd3Hk4X/rebIkgTBjSwbUWiWcDotAZrWxYM16ApHZONrIAofTAqfLOgRCnYoIrbBYDGBZHZGw8Hi18AV08PnNsNnNAmnChO16FVxOGziLCXa7Ed3dZpRLXFi50o1jx+zo8RKpjRsaIe8hyxnhdpugUFjw8MNhJCVFsXatB/6AARbrEAg1huuCh/yrdberoGhR4uRJExqOcPhJYaP4xV5byPK9wCuAL5+srVlQG1rh4JPiMEGtbEZz0w+wOXXw+IxwuinLdpbOiXDQqu+HSEKebiQP38uA2WoCgn1UdyFEvAGEPYSeMIKeEMLeMHr9IaEemarzVPnnJQIqSQ1xxK7HIUHpmXVYe6ZkEBQLtuR0Ed79cj2YiNePkNuLkMuLCNkw2bA7hpCrB/BFKBE6jKkZI3grKhMJuh0A0vnwimFg+HdnqbbaO9S0UC/UmZksJ1gdnBTodopfJqmFj6dYljJovPm2NuK9EWAMhpvQ3uigDHHQarth4UhWFhYcZyZrgtNmgUbfijGU6YT6Ib/I4eDQSplravondLpuBAJ6RCNGeH10z2pBh2EIhHYi83js+Ozzeihbm6E3WLFmjQOvve5D/SEHgl4L1PrriRPy+nP3OPCXXfthYm+gs9OGnJww1VMvios91KKMRNiWOKHH78K1y5fwzblzcLgsUKnUOHy4G3v36nD1cidshhvoYNsTJ/RFfTj+yR5I3ngTNo8VWn0XZVsDzqqBwdQBM2tEh7kNY+uyhObLqydZLh4AXqYjainLt6gL+60uOHUs+gJh9FHF9/mp+waiuBWMAr2AlTzPkJOHG/rrcBMzEFSjwyVUh0Wn16DkLFX7VyUoOvU2ik6+Ldhi/vqZIgGlZ0sg/boK8otSyBulgpVdqO4/l6GmUY6aSzJsubKZYt/PLuCuXQVv3mGQSd5ZrQYgfJs8D9NsieJ2IELajgrHCPXidrgPiN6ibjNIPOIQ02cuH7esuthM4es1PlPi3SU+W/7/mUJjwGgyUvI4UtkvmSkkP56Q1zhris0Un1+LUEhP3ZqjTX7BTHHGZ4rDiM4uM7V+FwqXu3HgoINmCitMwIQJ2/RKGk4cTDQ+nS4DWpRmPPhgkAhCKC5xwevXUXzZe48AvoBTalKFpGTXZcPA3RQ6daCnB2xnFzRKDRrPO/HVqR50qX2keTe8bg9tUP3vT487wH+eVMR+KVKrU5H7t6nI2zcLs/bORO6uKcjdPQUvHM3DUvpHWdQwB7P3zcbi+kVgcrbn4D8xbvs4ZNZl4vnPnkPhsVewrGEplh1ZijkH5iB/Xz7mHSzA+D3jkf7+r5FOn29p1FTTSXJptemC3v8F1bbYGCBTpgIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/518c71dff7b54ffbb0c4b96434720e8c/a59e9/cate-feed-01.webp 192w,
+/static/518c71dff7b54ffbb0c4b96434720e8c/0ca9f/cate-feed-01.webp 384w,
+/static/518c71dff7b54ffbb0c4b96434720e8c/0692d/cate-feed-01.webp 728w"
+              sizes="(max-width: 728px) 100vw, 728px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/518c71dff7b54ffbb0c4b96434720e8c/3b721/cate-feed-01.png 192w,
+/static/518c71dff7b54ffbb0c4b96434720e8c/66595/cate-feed-01.png 384w,
+/static/518c71dff7b54ffbb0c4b96434720e8c/0b3a5/cate-feed-01.png 728w"
+            sizes="(max-width: 728px) 100vw, 728px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/518c71dff7b54ffbb0c4b96434720e8c/0b3a5/cate-feed-01.png"
+            alt="cate feed 01"
+            title=""
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<p>column 수에 맞추어 영역을 구분해 주게 되면 위와 같은 모습을 띄우게 됩니다.</p>
+<p>이후 CellRendererComponent를 활용한 위치 계산식을 추가하여 영역을 재설정 해주었는데요.</p>
+<p>아쉽게도 또 다시 문제점들이 발생되었습니다.</p>
+<p><img src="/b0b684b929f7b182fc4e81aab18652cb/cate-feed-02.gif" alt=""></p>
+<p>목록이 쌓일 수록 스크롤이 떨리는 현상이 발생하고 스크롤 위치가 변경되는 이슈였습니다.</p>
+<p>(영상 마지막 부분을 보면 떨림 현상이 존재한다. 😭)</p>
+<h2 id="다섯-번째-시도" style="position:relative;"><a href="#%EB%8B%A4%EC%84%AF-%EB%B2%88%EC%A7%B8-%EC%8B%9C%EB%8F%84" aria-label="다섯 번째 시도 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>다섯 번째 시도</h2>
+<p><code class="language-text">CellRendererComponent</code> 를 제거하고 위치 계산식을 개선하였습니다.</p>
+<p>이후 Scroll 위치가 변동되는 이슈는 사라지게 되었습니다.</p>
+<p>당시 테스트 기기 중 하나인 Android S9 에서 많은 양의 데이터를 처리할 때 스크롤을 내릴 수 조차 없었으나, 로딩이 있긴 하나 페이지를 내릴 수 있는 정도가 까지 개선되었는데요.</p>
+<p>어느 정도 사용 할 정도가 되었으니 모든 최적화 방법을 검토하고 적용해 보자 생각하였습니다.</p>
+<p>이후 FlatList 내 최적화 옵션들을 적용하였습니다.</p>
 <ul>
-<li>최신 타입스크립트/자바스크립트를 브라우저에서 동작할 수 있도록 구버전의 자바스크립트로 트랜스파일(transfile)</li>
-<li>코드의 타입 오류를 체크</li>
+<li>
+<p>keyExtractor</p>
+</li>
+<li>
+<p>getItemLayout</p>
+</li>
+<li>
+<p>windowSize</p>
+</li>
+<li>
+<p>MaxtoRenderPerBatch</p>
+</li>
+<li>
+<p>initialNumToRender</p>
+</li>
+<li>
+<p>removeClippedSubviews</p>
+</li>
 </ul>
-<blockquote>
-<p>타입 오류가 존재하더라도 코드 생성(컴파일)은 가능하다.</p>
-</blockquote>
-<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token string">'hello'</span>  
-x <span class="token operator">=</span> <span class="token number">1234</span>  <span class="token comment">// '1234' 형식은 'string' 형식에 할당할 수 없습니다.</span></code></pre></div>
-<p>타입 오류가 발생해도 컴파일 된다.</p>
-<blockquote>
-<p>타입스크립트 타입은 런타임에 사용할 수 없다.
-런타임에 타입을 지정하려면, 타입 정보 유지를 위한 별도의 방법이 필요하다.</p>
-</blockquote>
-<ol>
-<li>height 속성이 존재하는지 체크</li>
-</ol>
-<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">interface</span> <span class="token class-name">Square</span> <span class="token punctuation">{</span>  
-  width<span class="token operator">:</span> <span class="token builtin">number</span>  
-<span class="token punctuation">}</span>  
-<span class="token keyword">interface</span> <span class="token class-name">Rectangle</span> <span class="token keyword">extends</span> <span class="token class-name">Square</span> <span class="token punctuation">{</span>  
-  height<span class="token operator">:</span> <span class="token builtin">number</span>  
-<span class="token punctuation">}</span>  
-<span class="token keyword">type</span> <span class="token class-name">Shape</span> <span class="token operator">=</span> Square <span class="token operator">|</span> Rectangle  
-<span class="token keyword">function</span> <span class="token function">calculateArea</span><span class="token punctuation">(</span>shape<span class="token operator">:</span> Shape<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
-  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">'height'</span> <span class="token keyword">in</span> shape<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
-    shape <span class="token comment">// Type is Rectangle  </span>
-    <span class="token keyword">return</span> shape<span class="token punctuation">.</span>width <span class="token operator">*</span> shape<span class="token punctuation">.</span>height  
-  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>  
-    shape <span class="token comment">// Type is Square  </span>
-    <span class="token keyword">return</span> shape<span class="token punctuation">.</span>width <span class="token operator">*</span> shape<span class="token punctuation">.</span>width  
-  <span class="token punctuation">}</span>  
-<span class="token punctuation">}</span></code></pre></div>
-<ol start="2">
-<li>접근 가능한 타입 정보를 명시적으로 저장하는 ‘태그’ 기법</li>
-</ol>
-<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">interface</span> <span class="token class-name">Square</span> <span class="token punctuation">{</span>  
-  kind<span class="token operator">:</span> <span class="token string">'square'</span>  
-  width<span class="token operator">:</span> <span class="token builtin">number</span>  
-<span class="token punctuation">}</span>  
-<span class="token keyword">interface</span> <span class="token class-name">Rectangle</span> <span class="token punctuation">{</span>  
-  kind<span class="token operator">:</span> <span class="token string">'rectangle'</span>  
-  height<span class="token operator">:</span> <span class="token builtin">number</span>  
-  width<span class="token operator">:</span> <span class="token builtin">number</span>  
-<span class="token punctuation">}</span>  
-<span class="token keyword">type</span> <span class="token class-name">Shape</span> <span class="token operator">=</span> Square <span class="token operator">|</span> Rectangle   <span class="token comment">// 태그된 유니온(tagged union)</span>
-  
-<span class="token keyword">function</span> <span class="token function">calculateArea</span><span class="token punctuation">(</span>shape<span class="token operator">:</span> Shape<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>shape<span class="token punctuation">.</span>kind <span class="token operator">===</span> <span class="token string">'rectangle'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
-    shape <span class="token comment">// Type is Rectangle  </span>
-    <span class="token keyword">return</span> shape<span class="token punctuation">.</span>width <span class="token operator">*</span> shape<span class="token punctuation">.</span>height  
-  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>  
-    shape <span class="token comment">// Type is Square  </span>
-    <span class="token keyword">return</span> shape<span class="token punctuation">.</span>width <span class="token operator">*</span> shape<span class="token punctuation">.</span>width  
-  <span class="token punctuation">}</span>  
-<span class="token punctuation">}</span></code></pre></div>
-<ol start="3">
-<li>타입을 클래스로 만드는 방법</li>
-</ol>
-<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">class</span> <span class="token class-name">Square</span> <span class="token punctuation">{</span>  
-  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token keyword">public</span> width<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>  
-<span class="token punctuation">}</span>  
-<span class="token keyword">class</span> <span class="token class-name">Rectangle</span> <span class="token keyword">extends</span> <span class="token class-name">Square</span> <span class="token punctuation">{</span>  
-  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token keyword">public</span> width<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span> <span class="token keyword">public</span> height<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
-    <span class="token keyword">super</span><span class="token punctuation">(</span>width<span class="token punctuation">)</span>  
-  <span class="token punctuation">}</span>  
-<span class="token punctuation">}</span>  
-<span class="token keyword">type</span> <span class="token class-name">Shape</span> <span class="token operator">=</span> Square <span class="token operator">|</span> Rectangle  <span class="token comment">// Rectangle은 타입으로 참조</span>
-  
-<span class="token keyword">function</span> <span class="token function">calculateArea</span><span class="token punctuation">(</span>shape<span class="token operator">:</span> Shape<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>shape <span class="token keyword">instanceof</span> <span class="token class-name">Rectangle</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">// 값으로 참조</span>
-    shape <span class="token comment">// Type is Rectangle  </span>
-    <span class="token keyword">return</span> shape<span class="token punctuation">.</span>width <span class="token operator">*</span> shape<span class="token punctuation">.</span>height  
-  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>  
-    shape <span class="token comment">// Type is Square  </span>
-    <span class="token keyword">return</span> shape<span class="token punctuation">.</span>width <span class="token operator">*</span> shape<span class="token punctuation">.</span>width <span class="token comment">// OK  </span>
-  <span class="token punctuation">}</span>  
-<span class="token punctuation">}</span></code></pre></div>
-<h1 id="아이템-4-구조적-타이핑에-익숙해지기" style="position:relative;"><a href="#%EC%95%84%EC%9D%B4%ED%85%9C-4-%EA%B5%AC%EC%A1%B0%EC%A0%81-%ED%83%80%EC%9D%B4%ED%95%91%EC%97%90-%EC%9D%B5%EC%88%99%ED%95%B4%EC%A7%80%EA%B8%B0" aria-label="아이템 4 구조적 타이핑에 익숙해지기 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>아이템 4 구조적 타이핑에 익숙해지기</h1>
-<blockquote>
-<p>자바스크립트가 덕 타이핑 기반이고 타입스크립트가 이를 모델링하기 위해 구조적 타이핑을 사용함을 이해해야 한다.</p>
-</blockquote>
-<p>자바스크립트는 런타임에 타입을 체크하고,
-타입스크립트는 컴파일 타입에 구조에 기반하여 타입을 체크한다.</p>
-<blockquote>
-<p>클래스 역시 구조적 타이핑 규칙을 따른다.</p>
-</blockquote>
-<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">class</span> <span class="token class-name"><span class="token constant">C</span></span> <span class="token punctuation">{</span>  
-  foo<span class="token operator">:</span> <span class="token builtin">string</span>  
-  <span class="token function">constructor</span><span class="token punctuation">(</span>foo<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
-    <span class="token keyword">this</span><span class="token punctuation">.</span>foo <span class="token operator">=</span> foo  
-  <span class="token punctuation">}</span>  
-<span class="token punctuation">}</span>  
-<span class="token comment">// 클래스를 값으로 사용</span>
-<span class="token keyword">const</span> c <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token constant">C</span></span><span class="token punctuation">(</span><span class="token string">'instance of C'</span><span class="token punctuation">)</span>
-<span class="token comment">// 클래스를 타입으로 사용</span>
-<span class="token keyword">const</span> d<span class="token operator">:</span> <span class="token constant">C</span> <span class="token operator">=</span> <span class="token punctuation">{</span> foo<span class="token operator">:</span> <span class="token string">'object literal'</span> <span class="token punctuation">}</span> <span class="token comment">// OK!   </span></code></pre></div>
-<blockquote>
-<p>구조적 타이핑을 사용하면 유닛 테스팅을 손쉽게 할 수 있다.</p>
-</blockquote>
-<p>예를 들어 PostgressDB가 DB 인터페이스를 구현하는지 명확히 선언할 필요가 없다.</p>
-<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">interface</span> <span class="token class-name">PostgresDB</span> <span class="token punctuation">{</span>  
-  <span class="token function-variable function">runQuery</span><span class="token operator">:</span> <span class="token punctuation">(</span>sql<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token builtin">any</span><span class="token punctuation">[</span><span class="token punctuation">]</span>  
-<span class="token punctuation">}</span>  
-<span class="token keyword">interface</span> <span class="token class-name">Author</span> <span class="token punctuation">{</span>  
-  first<span class="token operator">:</span> <span class="token builtin">string</span>  
-  last<span class="token operator">:</span> <span class="token builtin">string</span>  
-<span class="token punctuation">}</span>  
-<span class="token keyword">interface</span> <span class="token class-name"><span class="token constant">DB</span></span> <span class="token punctuation">{</span>  
-  <span class="token function-variable function">runQuery</span><span class="token operator">:</span> <span class="token punctuation">(</span>sql<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token builtin">any</span><span class="token punctuation">[</span><span class="token punctuation">]</span>  
-<span class="token punctuation">}</span>  
-<span class="token keyword">function</span> <span class="token function">getAuthors</span><span class="token punctuation">(</span>database<span class="token operator">:</span> <span class="token constant">DB</span><span class="token punctuation">)</span><span class="token operator">:</span> Author<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>  
-  <span class="token keyword">const</span> authorRows <span class="token operator">=</span> database<span class="token punctuation">.</span><span class="token function">runQuery</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">SELECT FIRST, LAST FROM AUTHORS</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>  
-  <span class="token keyword">return</span> authorRows<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>row <span class="token operator">=></span> <span class="token punctuation">(</span><span class="token punctuation">{</span> first<span class="token operator">:</span> row<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> last<span class="token operator">:</span> row<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  
-<span class="token punctuation">}</span></code></pre></div>
-<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'getAuthors'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>  
-  <span class="token keyword">const</span> authors <span class="token operator">=</span> <span class="token function">getAuthors</span><span class="token punctuation">(</span><span class="token punctuation">{</span>  
-    <span class="token function">runQuery</span><span class="token punctuation">(</span>sql<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
-      <span class="token keyword">return</span> <span class="token punctuation">[</span>  
-        <span class="token punctuation">[</span><span class="token string">'Toni'</span><span class="token punctuation">,</span> <span class="token string">'Morrison'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  
-        <span class="token punctuation">[</span><span class="token string">'Maya'</span><span class="token punctuation">,</span> <span class="token string">'Angelou'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  
-      <span class="token punctuation">]</span>  
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>  
-  <span class="token punctuation">}</span><span class="token punctuation">)</span>  
-  <span class="token function">expect</span><span class="token punctuation">(</span>authors<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toEqual</span><span class="token punctuation">(</span><span class="token punctuation">[</span>  
-    <span class="token punctuation">{</span> first<span class="token operator">:</span> <span class="token string">'Toni'</span><span class="token punctuation">,</span> last<span class="token operator">:</span> <span class="token string">'Morrison'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>  
-    <span class="token punctuation">{</span> first<span class="token operator">:</span> <span class="token string">'Maya'</span><span class="token punctuation">,</span> last<span class="token operator">:</span> <span class="token string">'Angelou'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>  
-  <span class="token punctuation">]</span><span class="token punctuation">)</span>  
-<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
-<h1 id="아이템-5-any-타입-지양하기" style="position:relative;"><a href="#%EC%95%84%EC%9D%B4%ED%85%9C-5-any-%ED%83%80%EC%9E%85-%EC%A7%80%EC%96%91%ED%95%98%EA%B8%B0" aria-label="아이템 5 any 타입 지양하기 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>아이템 5 any 타입 지양하기</h1>
-<blockquote>
-<p>any 타입을 사용하면 타입 체커와 타입스크립트 언어 서비스를 무력화한다.
-any 타입은 문제를 감추며, DX를 나쁘게하며, 타입 시스템의 신뢰도를 떨어뜨린다.</p>
-</blockquote>
-<p>any 타입을 지양해야 하는 이유는 다음과 같다.</p>
+<p>또한 이미지 위주로 화면을 그려주기 때문에 <a href="https://github.com/DylanVann/react-native-fast-image" target="_blank" rel="nofollow">raect-native-fast-image</a>를 적극적으로 활용하였습니다.
+적용 후 눈에 띄게 개선되었지만 초기 렌더링 속도가 아직 10s 이상 지연되었습니다.</p>
+<p>심적으로 많은 좌절감을 가지기도 하였으나, 처음으로 다시 돌아가 다른 방법들을 모색하기로 하였습니다.</p>
+<p>이후 찾게 된 신생 라이브러리 <a href="https://www.npmjs.com/package/@shopify/flash-list" target="_blank" rel="nofollow">FlashList</a> 를 찾게 됩니다.</p>
+<h2 id="여섯-번째-시도" style="position:relative;"><a href="#%EC%97%AC%EC%84%AF-%EB%B2%88%EC%A7%B8-%EC%8B%9C%EB%8F%84" aria-label="여섯 번째 시도 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>여섯 번째 시도</h2>
+<p>FlatList 에서 FlashList 로 전환 작업을 진행하였습니다.</p>
+<p>FlatList 성능의 UI thread <strong>5배</strong> JS thread <strong>10배</strong>의 퍼포먼스를 지닌 라이브러리 였습니다.</p>
+<p>석조 레이아웃 ( 두줄보기 )</p>
 <ul>
-<li>타입 안정성이 없다.</li>
-<li>함수 시그니처를 무시한다.</li>
-<li>언어 서비스가 적용되지 않는다.</li>
-<li>코드 리팩터링 때 버그를 감춘다.</li>
-<li>타입 설계를 감춘다.</li>
-<li>타입 시스템의 떨어뜨린다.</li>
-</ul></div></div><style data-emotion="css 1e214x">.css-1e214x{margin-top:4em;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}</style><div class="css-1e214x e1mgpb7r5"><style data-emotion="css 1iy10kd">.css-1iy10kd{padding:4px 8px;max-width:40%;min-width:26%;}</style><div class="css-1iy10kd e1mgpb7r4"><a href="/2024/2/"><style data-emotion="css 1aikicj">.css-1aikicj{font-size:0.875em;margin-bottom:0.5em;}</style><p class="css-1aikicj e1mgpb7r3">이전 포스트</p><style data-emotion="css 11oxohl">.css-11oxohl{font-size:0.875em;margin-bottom:10px;line-height:1.14;}</style><p class="css-11oxohl e1mgpb7r2">테스트 글 두 번째</p><div class="css-1nrstx4 e1mgpb7r0"><style data-emotion="css 1rr7q0j">.css-1rr7q0j{font-size:0.875em;font-weight:200;color:#939393;}@media (max-width: 768px){.css-1rr7q0j{display:none;}}</style><p class="css-1rr7q0j e1mgpb7r1">TypeScript</p><p class="css-1rr7q0j e1mgpb7r1">2024.03.16</p></div></a></div><div class="css-1iy10kd e1mgpb7r4"></div></div></div></div><style data-emotion="css f56wg9">.css-f56wg9{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;min-width:288px;max-width:288px;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}@media (max-width: 768px){.css-f56wg9{max-width:100%;}}</style><div class="css-f56wg9 e3jy6gn0"><style data-emotion="css j9ajtv">.css-j9ajtv{position:-webkit-sticky;position:sticky;top:40px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:10px 12px;font-size:0.875em;font-weight:300;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;}.css-j9ajtv a{color:#939393;}.css-j9ajtv ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;gap:4px;}.css-j9ajtv ul li{margin-left:10px;}@media (max-width: 768px){.css-j9ajtv{display:none;}}</style><div class="css-j9ajtv evu0g1r0"><ul>
-<li><a href="#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B8%80-%EC%9E%85%EB%8B%88%EB%8B%A4">테스트 글 입니다.</a></li>
-<li><a href="#%EC%95%84%EC%9D%B4%ED%85%9C-1-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%99%80-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%EA%B4%80%EA%B3%84-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0">아이템 1 타입스크립트와 자바스크립트의 관계 이해하기</a></li>
-<li><a href="#%EC%95%84%EC%9D%B4%ED%85%9C-2-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%84%A4%EC%A0%95-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0">아이템 2 타입스크립트 설정 이해하기</a></li>
-<li><a href="#%EC%95%84%EC%9D%B4%ED%85%9C-3-%EC%BD%94%EB%93%9C-%EC%83%9D%EC%84%B1%EA%B3%BC-%ED%83%80%EC%9E%85%EC%9D%B4-%EA%B4%80%EA%B3%84%EC%97%86%EC%9D%8C%EC%9D%84-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0">아이템 3 코드 생성과 타입이 관계없음을 이해하기</a></li>
-<li><a href="#%EC%95%84%EC%9D%B4%ED%85%9C-4-%EA%B5%AC%EC%A1%B0%EC%A0%81-%ED%83%80%EC%9D%B4%ED%95%91%EC%97%90-%EC%9D%B5%EC%88%99%ED%95%B4%EC%A7%80%EA%B8%B0">아이템 4 구조적 타이핑에 익숙해지기</a></li>
-<li><a href="#%EC%95%84%EC%9D%B4%ED%85%9C-5-any-%ED%83%80%EC%9E%85-%EC%A7%80%EC%96%91%ED%95%98%EA%B8%B0">아이템 5 any 타입 지양하기</a></li>
+<li>FlatList 에서 좌/우 높이 계산식을 통한 UI 배치 방법에서 FlashList 에서 제공하는 MasonryFlashList 로 전환</li>
+<li>높이 계산식 제거함으로써 계산 과정이 생략되었습니다.</li>
+</ul>
+<p>기본 레이아웃 ( 한줄보기 )</p>
+<ul>
+<li>FlatList -> FlashList 로 전환</li>
+</ul>
+<p>전환 작업 이후 약 10s 정도의 렌더링 속도에서 1~2s 로 대폭 감소되었습니다. 눈에 띄는 변화였는데요.</p>
+<p>FlashList 의 성능을 최대로 활용하기 위해서는 컴포넌트 내부의 useState 의 사용을 지양 했어야 했습니다. <a href="https://shopify.github.io/flash-list/docs/recycling" target="_blank" rel="nofollow">FlashList Recycling</a></p>
+<p>최종적으로 이를 위한 리팩터링을 진행하였습니다.</p>
+<p>리팩터링 기간 동안 백엔드 팀에서는 Image resize 작업을 같이 진행해 주셨습니다.(감사합니다 🙇🏻)</p>
+<p>기존의 렌더링 할 Item 내에 state 가 존재하였고, 하나의 컴포넌트에 모든 처리 과정이 담겨있었습니다.</p>
+<ol>
+<li>
+<p>FlashList 내에서 state 를 제어하기 위한 불필요한 코드들</p>
+</li>
+<li>
+<p>UI / UX 로직</p>
+</li>
+<li>
+<p>비즈니스 로직</p>
+</li>
+</ol>
+<p>이를 위해 리 팩터링 목표를 크게 다음과 같이 선정하였습니다.</p>
+<ol>
+<li>
+<p>컴포넌트 세분화</p>
+</li>
+<li>
+<p>컴포넌트 내 State 제거</p>
+</li>
+</ol>
+<p>작업에 앞서 각각 역할에 대해 다시 한번 검토를 진행하였습니다.</p>
+<p>최종적으로 기존의 집중되어 있던 하나의 컴포넌트에서 총 20개의 컴포넌트로 분리되었습니다.</p>
+<ul>
+<li>
+<p>Atomic Design Pattern 을 적용하여 총 20개의 Atom 컴포넌트로 리 팩터링 하여 컴포넌트 간 의존 관계를 제거하였습니다.</p>
+</li>
+<li>
+<p>분리한 컴포넌트의 추상화 수준을 변경하여 선언적 프로그래밍이 가능하도록 변경되었습니다.</p>
+</li>
+<li>
+<p>피드와 연관된 컴포넌트를 Compound Component 로 구성하여 응집도가 높은 컴포넌트로 설계 하였습니다.</p>
+</li>
+<li>
+<p>비즈니스 로직의 경우 부모 페이지에서 역할을 수행할 수 있도록 변경하여 모든 의사결정을 컴포넌트를 할당한 위치에서 제어할 수 있게 되었습니다.</p>
+</li>
+<li>
+<p>메모리 절약</p>
+</li>
+<li>
+<p>컴포넌트 내 모든 addEventlistener 를 제거하고 최상위 요소에 이벤트를 위임하였습니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">( n 개의 피드 수에 따라 n 개의 Event 가 할당되고 있었다. )</code></pre></div>
+<ul>
+<li>Redux 에서 유저정보를 조회해서 피드 작성 유저와 비교하는 로직</li>
+</ul>
+</li>
+</ul>
+<p>모든 리팩터링을 진행한 후에 <a href="https://fbflipper.com/" target="_blank" rel="nofollow">Flipper</a> Profiler 로 측정한 결과</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 197px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/3ac643b8d949db443f9e3328dfd15c11/fab3c/cate-feed-03.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 82.8125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAABFklEQVR42u2MvUrDYBiFv0txE4kFnfRSnGocLN6KFNwURVfBQYr/CC3oYNOfxCStTRpKraKoyVSdbC3NY/O1DlYFQcceeDjnPbwcUX9skLXyaHYB3TG59Gx010Qr6RhVi2Kl71atTK5UHPwZOLcehmtxrmcpOBZa2cCqO4j7XBInNUcpFcfdV6kd97k5XcA9UKnszdPo5Y/eO1Ixd+N4hyrXJyrP2QQvWoLmxaJEPGWWyK+MkV6ewFhVMNcUnM0YDzvTMke4WzHZ3W1PYa8rnCXHudqYlF03PQOZiFnpIuw04c3vEdBt+YQ9aAfSw1Yg++iOPGz7EjqDO/p5/YwIgWG+U/hDHpb4Ovc3BP+s0eBocDT4m8F3zPEOulFhGMoAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/3ac643b8d949db443f9e3328dfd15c11/a59e9/cate-feed-03.webp 192w,
+/static/3ac643b8d949db443f9e3328dfd15c11/41ef6/cate-feed-03.webp 197w"
+              sizes="(max-width: 197px) 100vw, 197px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/3ac643b8d949db443f9e3328dfd15c11/3b721/cate-feed-03.png 192w,
+/static/3ac643b8d949db443f9e3328dfd15c11/fab3c/cate-feed-03.png 197w"
+            sizes="(max-width: 197px) 100vw, 197px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/3ac643b8d949db443f9e3328dfd15c11/fab3c/cate-feed-03.png"
+            alt="cate feed 03"
+            title=""
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<p>최종적으로 10s 정도의 렌더링이 3.8ms 로 개선되었고 안드로이드 환경에서도 문제없이 작동하였습니다.</p>
+<h2 id="마치며" style="position:relative;"><a href="#%EB%A7%88%EC%B9%98%EB%A9%B0" aria-label="마치며 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>마치며</h2>
+<p>적어놓고 보니 긴 삽질 과정 늘어놓은 것 같네요. 하지만 과정 속에 계속해서 여러 이슈들과 부딪히면서 ReactNative에 대해 더 알게 되고 성장할 수 있었던 시간이었습니다. 그리고 한 가지 생각에 갇혀있기보다는 처음으로 다시 돌아가서 생각해 보는 것도 문제를 해결하는 하나의 방법인 것 같습니다.</p>
+<p>추가로 팀원들과 이슈를 공유하면서 FE/BE 모두 더 나은 서비스로 발전시킬 수 있었던 소중한 경험이었습니다.</p>
+<p>FlashList 적용을 고려하시는 분들께 약간의 도움이 되었길 바라면서 마치도록 하겠습니다.</p>
+<p>감사합니다.</p></div></div><style data-emotion="css 1e214x">.css-1e214x{margin-top:4em;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}</style><div class="css-1e214x e1mgpb7r5"><style data-emotion="css 1iy10kd">.css-1iy10kd{padding:4px 8px;max-width:40%;min-width:26%;}</style><div class="css-1iy10kd e1mgpb7r4"></div><div class="css-1iy10kd e1mgpb7r4"><a href="/2024/2/"><style data-emotion="css 1aikicj">.css-1aikicj{font-size:0.875em;margin-bottom:0.5em;}</style><p class="css-1aikicj e1mgpb7r3">다음 포스트</p><style data-emotion="css 11oxohl">.css-11oxohl{font-size:0.875em;margin-bottom:10px;line-height:1.14;}</style><p class="css-11oxohl e1mgpb7r2">블로그 마크다운 테스트</p><div class="css-1nrstx4 e1mgpb7r0"><style data-emotion="css 1rr7q0j">.css-1rr7q0j{font-size:0.875em;font-weight:200;color:#939393;}@media (max-width: 768px){.css-1rr7q0j{display:none;}}</style><p class="css-1rr7q0j e1mgpb7r1">TypeScript</p><p class="css-1rr7q0j e1mgpb7r1">2024.03.16</p></div></a></div></div></div></div><style data-emotion="css f56wg9">.css-f56wg9{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;min-width:288px;max-width:288px;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}@media (max-width: 768px){.css-f56wg9{max-width:100%;}}</style><div class="css-f56wg9 e3jy6gn0"><style data-emotion="css j9ajtv">.css-j9ajtv{position:-webkit-sticky;position:sticky;top:40px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:10px 12px;font-size:0.875em;font-weight:300;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;}.css-j9ajtv a{color:#939393;}.css-j9ajtv ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;gap:4px;}.css-j9ajtv ul li{margin-left:10px;}@media (max-width: 768px){.css-j9ajtv{display:none;}}</style><div class="css-j9ajtv evu0g1r0"><ul>
+<li><a href="#%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0-%EC%A0%84%EC%97%90">들어가기 전에</a></li>
+<li><a href="#%EC%B2%AB-%EB%B2%88%EC%A7%B8-%EC%8B%9C%EB%8F%84">첫 번째 시도</a></li>
+<li><a href="#%EB%91%90-%EB%B2%88%EC%A7%B8-%EC%8B%9C%EB%8F%84">두 번째 시도</a></li>
+<li><a href="#%EC%84%B8-%EB%B2%88%EC%A7%B8-%EC%8B%9C%EB%8F%84">세 번째 시도</a></li>
+<li><a href="#%EB%84%A4-%EB%B2%88%EC%A7%B8-%EC%8B%9C%EB%8F%84">네 번째 시도</a></li>
+<li><a href="#%EB%8B%A4%EC%84%AF-%EB%B2%88%EC%A7%B8-%EC%8B%9C%EB%8F%84">다섯 번째 시도</a></li>
+<li><a href="#%EC%97%AC%EC%84%AF-%EB%B2%88%EC%A7%B8-%EC%8B%9C%EB%8F%84">여섯 번째 시도</a></li>
+<li><a href="#%EB%A7%88%EC%B9%98%EB%A9%B0">마치며</a></li>
 </ul></div></div></div></main><style data-emotion="css 5gzfvn">.css-5gzfvn{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;height:80px;background-color:rgba(0, 0, 0, 0.08);box-sizing:border-box;}</style><footer class="css-5gzfvn ezp0x4g1"><style data-emotion="css 7v98l9">.css-7v98l9{font-size:0.75em;color:#000;}</style><p class="css-7v98l9 ezp0x4g0">© 2023 Vespucci95. All rights reserved.</p></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2CJELGV3LJ"></script><script>
       
       
