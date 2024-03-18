@@ -8,14 +8,21 @@ const Preface = ({
     tags,
     categories,
 }: Omit<Frontmatter, 'stage' | 'description'> & { tags: string[] }) => {
+    const hasHashTag = tags && tags.length > 0;
     return (
         <S.Container>
             <S.Title>{title}</S.Title>
             <S.Row>
-                <S.Category>
-                    {categories}
-                    {tags && tags.length > 0 ? ' ∣ ' + tags.join(', ') : null}
-                </S.Category>
+                <S.Body>
+                    <p>{categories}</p>
+                    {hasHashTag && ' ∣ '}
+                    {hasHashTag &&
+                        tags.map(tag => (
+                            <S.Tag key={tag} to={`/hashtag/${tag.replace('#', '')}`}>
+                                {tag}
+                            </S.Tag>
+                        ))}
+                </S.Body>
                 <S.Date>{date}</S.Date>
             </S.Row>
         </S.Container>

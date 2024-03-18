@@ -21,7 +21,10 @@ export const Date = styled.p`
     white-space: nowrap;
 `;
 
-export const Category = styled.p`
+export const Body = styled.p`
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
     font-size: 1em;
     font-weight: 200;
     color: ${({ theme }) => theme.color.gray300};
