@@ -42,7 +42,7 @@ export const PostContent = styled.div`
 `;
 
 export const Title = styled.p`
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-size: 1.25em;
     font-weight: 300;
     line-height: 1.14;
