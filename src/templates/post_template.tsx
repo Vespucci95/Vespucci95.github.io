@@ -142,7 +142,7 @@ export const query = graphql`
                 description
                 thumbnail {
                     childImageSharp {
-                        gatsbyImageData(width: 200, transformOptions: { fit: COVER })
+                        gatsbyImageData(width: 800, transformOptions: { fit: COVER })
                     }
                 }
             }
