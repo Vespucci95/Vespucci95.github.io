@@ -78,6 +78,9 @@ const MarkdownRenderer = styled.div`
     ol {
         padding-left: 2em;
     }
+    li:last-child {
+        margin-bottom: 1em;
+    }
     img {
         pointer-events: none;
         display: block;
@@ -122,6 +125,10 @@ const MarkdownRenderer = styled.div`
 
     hr {
         margin: 2.5em 0;
+    }
+
+    strong {
+        font-weight: 500;
     }
 `;
 

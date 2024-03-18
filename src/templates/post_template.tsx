@@ -1,6 +1,5 @@
 import { graphql, PageProps } from 'gatsby';
 import * as React from 'react';
-
 import MDXRender from '@/components/MDXRender';
 import { MarkdownRemark, MetaData } from 'GatsbyGraphQL';
 import PostNavigation from '@/components/PostNavigation';
@@ -128,7 +127,6 @@ export const query = graphql`
                     inputPosition
                     theme
                     lang
-                    loading
                 }
             }
         }
@@ -144,7 +142,7 @@ export const query = graphql`
                 description
                 thumbnail {
                     childImageSharp {
-                        gatsbyImageData(width: 800)
+                        gatsbyImageData(width: 200, transformOptions: { fit: COVER })
                     }
                 }
             }

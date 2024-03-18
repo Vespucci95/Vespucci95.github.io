@@ -132,9 +132,6 @@ const config: GatsbyConfig = {
             resolve: `gatsby-plugin-mdx`,
             options: {
                 extensions: [`.mdx`, `.md`],
-                defaultLayouts: {
-                    default: `${__dirname}/src/templates/default-template.tsx`,
-                },
             },
         },
         {
