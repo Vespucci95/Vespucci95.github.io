@@ -35,7 +35,7 @@ const config: GatsbyConfig = {
         {
             resolve: 'gatsby-plugin-canonical-urls',
             options: {
-                siteUrl: '<https://vespucci95.github.io/>',
+                siteUrl: 'https://vespucci95.github.io',
                 stripQueryString: true,
             },
         },
