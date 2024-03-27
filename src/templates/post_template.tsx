@@ -103,11 +103,14 @@ const PostLayout: React.FC<PageProps> = ({ data }) => {
 };
 
 export const Head = ({
+    data,
     pageContext,
 }: {
+    data: Props;
     pageContext: { title: string; slug: string; nextSlug: string; prevSlug: string };
 }) => {
-    return <Seo title={pageContext.title} />;
+    const { publicURL } = data.post.frontmatter.thumbnail;
+    return <Seo title={pageContext.title} ogImageURL={publicURL} />;
 };
 
 export const query = graphql`
@@ -144,6 +147,7 @@ export const query = graphql`
                     childImageSharp {
                         gatsbyImageData(width: 800, transformOptions: { fit: COVER })
                     }
+                    publicURL
                 }
             }
             fields {

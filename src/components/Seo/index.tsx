@@ -21,9 +21,10 @@ type SeoProps = {
 
 type Props = {
     title: string;
+    ogImageURL?: string;
 };
 
-const Seo = ({ title }: Props) => {
+const Seo = ({ title, ogImageURL }: Props) => {
     const { meta, ogImage }: SeoProps = useStaticQuery(graphql`
         query MetaQuery {
             meta: site {
@@ -48,7 +49,7 @@ const Seo = ({ title }: Props) => {
             <meta name="description" content={meta.siteMetadata.description} />
             <meta property="og:title" content={`${meta.siteMetadata.author} | ${title}`} />
             <meta property="og:description" content={meta.siteMetadata.description} />
-            <meta property="og:image" content={ogImage.publicURL} />
+            <meta property="og:image" content={ogImageURL ?? ogImage.publicURL} />
             <meta property="og:site_name" content={`${meta.siteMetadata.author} | ${title}`} />
             <meta property="og:site_title" content={`${meta.siteMetadata.author} | ${title}`} />
             <meta property="og:author" content={meta.siteMetadata.author} />

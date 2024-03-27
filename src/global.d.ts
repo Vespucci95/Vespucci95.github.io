@@ -12,6 +12,7 @@ declare module 'GatsbyGraphQL' {
             childImageSharp: {
                 gatsbyImageData: IGatsbyImageData;
             };
+            publicURL: string;
         };
     }
     interface Fields {
