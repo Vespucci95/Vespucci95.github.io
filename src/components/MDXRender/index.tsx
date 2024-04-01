@@ -32,35 +32,43 @@ const MarkdownRenderer = styled.div`
         margin-bottom: 0.4em;
         font-size: 2em;
         font-weight: 300;
+
         :first-child {
             margin-top: unset;
         }
     }
+
     h2 {
         margin-bottom: 0.3em;
         font-size: 1.8em;
         font-weight: 300;
+
         :first-child {
             margin-top: unset;
         }
     }
+
     h3 {
         margin-bottom: 0.25em;
         font-size: 1.5em;
         font-weight: 300;
+
         :first-child {
             margin-top: unset;
         }
     }
+
     h4 {
         margin-bottom: 0.2em;
         font-size: 1.375em;
         font-weight: 300;
     }
+
     h5 {
         font-size: 1.3em;
         font-weight: 300;
     }
+
     h6 {
         font-size: 1.1em;
         font-weight: 300;
@@ -68,25 +76,28 @@ const MarkdownRenderer = styled.div`
 
     p {
         margin-bottom: 0.825em;
-        line-height: 1.5;
     }
 
     ul {
         padding-left: 2em;
         list-style-type: '– ';
     }
+
     ol {
         padding-left: 2em;
     }
+
     li:last-child {
         margin-bottom: 1em;
     }
+
     img {
         pointer-events: none;
         display: block;
         margin: 0 auto;
         position: relative;
     }
+
     img::before {
         content: '😎 이미지 휴가 중: 다녀올 때까지 기다려주세요. 🏖️🌴';
         display: block;
@@ -129,6 +140,11 @@ const MarkdownRenderer = styled.div`
 
     strong {
         font-weight: 500;
+    }
+
+    blockquote {
+        border-left: 3px solid ${({ theme }) => theme.color.black};
+        padding-left: 6px;
     }
 `;
 
