@@ -64,7 +64,7 @@
 제가 시도했던 방법들을 간략하게 말씀드리도록 하겠습니다.</p>
 <p>모든 과정이 한 번에 이루어진 것은 아니며, 계속 디벨롭해 나가며 진행되었다는 점을 미리 말씀드릴게요!</p>
 <h2 id="첫-번째-시도" style="position:relative;"><a href="#%EC%B2%AB-%EB%B2%88%EC%A7%B8-%EC%8B%9C%EB%8F%84" aria-label="첫 번째 시도 permalink" class="post-toc before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>첫 번째 시도</h2>
-<p>첫 번째 요구사항에 맞추어 <a href="/hashtag/ReactNative">#ReactNative</a> 에서 활용할 수 있는 모든 라이브러리를 찾아보기 시작했습니다.</p>
+<p>첫 번째 요구사항에 맞추어<a href="/hashtag/ReactNative"> #ReactNative</a> 에서 활용할 수 있는 모든 라이브러리를 찾아보기 시작했습니다.</p>
 <p>가장 요구사항에 적합한 라이브러리 <a href="https://github.com/hyochan/react-native-masonry-list" target="_blank" rel="nofollow">react-native-masonry-list</a> 를 활용하고자 하였습니다.
 검토 당시 아쉽게도 사용 당시 몇 가지 문제점이 있었는데요.</p>
 <p>목록이 쌓일수록 높이 값을 계산하지 못해 우측에만 쌓이는 현상이 존재하였습니다. <a href="https://github.com/hyochan/react-native-masonry-list/issues/16" target="_blank" rel="nofollow">issue</a></p>
@@ -75,7 +75,7 @@
 우측에 쌓이는 현상만 해결하면 사용 가능해 보였기 때문입니다.</p>
 <p>구현 방식은 colum 수에 따라 데이터를 나누어서 레이아웃을 나누어 화면에 그려주었습니다.</p>
 <p>최종적으로 우측에 쌓이는 현상을 해결하였지만, 한 가지 큰 문제점이 존재하였는데요.</p>
-<p>ScrollView는 모든 요소를 한 번에 <a href="/hashtag/%EB%A0%8C%EB%8D%94%EB%A7%81">#렌더링</a> 하기 때문에 대용량의 데이터를 처리하기에는 옳지 않은 방법이었습니다.</p>
+<p>ScrollView는 모든 요소를 한 번에<a href="/hashtag/%EB%A0%8C%EB%8D%94%EB%A7%81"> #렌더링</a> 하기 때문에 대용량의 데이터를 처리하기에는 옳지 않은 방법이었습니다.</p>
 <p>테스트 단계에서는 적은 양의 데이터를 처리했기 때문에 큰 이슈가 발생하지 않는 것처럼 보였는데요.
 iOS 환경에서의 퍼포먼스는 준수 한 편이었지만, Android 환경에서 점차 문제가 생기기 시작했습니다.</p>
 <p>이 또한 실무에 적용하기에 어렵다고 생각되었고 다른 방법을 모색하게 되었습니다.</p>
@@ -298,6 +298,6 @@ iOS 환경에서의 퍼포먼스는 준수 한 편이었지만, Android 환경�
           <script
             id="gatsby-chunk-mapping"
           >
-            window.___chunkMapping="{\"app\":[\"/app-2bcc99910292a5877a97.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-225b27becd376c2a9b21.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-49b1a9f8ab7323a76ef6.js\"],\"component---src-templates-hashtag-template-tsx\":[\"/component---src-templates-hashtag-template-tsx-27734a6527b9ad7f4d6d.js\"],\"component---src-templates-hashtags-template-tsx\":[\"/component---src-templates-hashtags-template-tsx-3a174335437050142405.js\"],\"component---src-templates-post-template-tsx\":[\"/component---src-templates-post-template-tsx-e2f9adfb953d7fb2d4fd.js\"]}";
+            window.___chunkMapping="{\"app\":[\"/app-2bcc99910292a5877a97.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-225b27becd376c2a9b21.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-49b1a9f8ab7323a76ef6.js\"],\"component---src-templates-hashtag-template-tsx\":[\"/component---src-templates-hashtag-template-tsx-27734a6527b9ad7f4d6d.js\"],\"component---src-templates-hashtags-template-tsx\":[\"/component---src-templates-hashtags-template-tsx-3a174335437050142405.js\"],\"component---src-templates-post-template-tsx\":[\"/component---src-templates-post-template-tsx-44063bafc247e0bf775e.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="1361db141a03b588ba29";</script><script src="/webpack-runtime-fbfdee51e4279185479e.js" async></script><script src="/framework-6ec071f806e7490e535f.js" async></script><script src="/app-2bcc99910292a5877a97.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="3a8c275aa83040e0d95d";</script><script src="/webpack-runtime-b1f42744ca3e3cdcab0d.js" async></script><script src="/framework-6ec071f806e7490e535f.js" async></script><script src="/app-2bcc99910292a5877a97.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
