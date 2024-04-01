@@ -57,8 +57,9 @@ query CreatePage {
 const createHashTagField: CreateNodeFn = (node, actions) => {
     const { createNodeField } = actions;
     if (node.internal.content) {
-        const hashTags = new Set(node.internal.content.match(/#[A-Za-z0-9가-힣]+/gm));
-        createNodeField({ node, name: 'hashTag', value: [...hashTags] });
+        const hashTags = new Set(node.internal.content.match(/(?:^|\s)#([\w가-힣\\-]+)/gm));
+        const value = [...hashTags].map(v => v.trim());
+        createNodeField({ node, name: 'hashTag', value });
     }
 };
 
