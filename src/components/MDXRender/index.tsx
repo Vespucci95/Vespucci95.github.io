@@ -87,8 +87,16 @@ const MarkdownRenderer = styled.div`
         padding-left: 2em;
     }
 
+    li {
+        margin-bottom: 0.2em;
+    }
+
     li:last-child {
         margin-bottom: 1em;
+    }
+
+    li p {
+        margin: 0;
     }
 
     img {
