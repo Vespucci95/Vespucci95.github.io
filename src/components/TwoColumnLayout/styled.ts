@@ -13,7 +13,11 @@ export const Wrapper = styled.div`
 export const LeftColumn = styled.div`
     display: flex;
     width: 100%;
+    max-width: calc(100% - 288px);
     flex-direction: column;
+    @media ${MEDIA_QUERY_MAX_WIDTH} {
+        max-width: 100%;
+    }
 `;
 export const RightColumn = styled.div`
     display: flex;
