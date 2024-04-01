@@ -109,8 +109,8 @@ export const Head = ({
     data: Props;
     pageContext: { title: string; slug: string; nextSlug: string; prevSlug: string };
 }) => {
-    const { publicURL } = data.post.frontmatter.thumbnail;
-    return <Seo title={pageContext.title} ogImageURL={publicURL} />;
+    const { thumbnail } = data.post.frontmatter;
+    return <Seo title={pageContext.title} ogImageURL={thumbnail?.publicURL ?? null} />;
 };
 
 export const query = graphql`

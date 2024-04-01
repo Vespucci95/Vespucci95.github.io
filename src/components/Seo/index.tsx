@@ -21,7 +21,7 @@ type SeoProps = {
 
 type Props = {
     title: string;
-    ogImageURL?: string;
+    ogImageURL: string | null;
 };
 
 const Seo = ({ title, ogImageURL }: Props) => {
