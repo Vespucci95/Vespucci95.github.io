@@ -11,8 +11,12 @@
             "id": "b926f8e3c7e26991",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "2024/3.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2024/3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2024/3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "2024/3.md"
+              }
             }
           },
           {
@@ -150,19 +158,20 @@
   },
   "active": "b926f8e3c7e26991",
   "lastOpenFiles": [
+    "2024/2.md",
+    "2024/1.md",
+    "2024/3.md",
+    "media/docker-study-01.png",
+    "media/docker-study-02.png",
+    "media/nextjs-with-docker.png",
+    "media/Pasted image 20240401051015.png",
     "media/img-2.jpg",
     "media/img-1.jpg",
     "media/cate-feed-03.png",
     "media/cate-feed-02.gif",
     "media/cate-feed-01.png",
-    "2024/2.md",
-    "2024/1.md",
     "media/brick.png",
     "2024/react-native-1.md",
-    "media/temp.png",
-    "media/2.png",
-    "media/01.png",
-    "media/img-4.jpg",
     "Pasted.md",
     "feed-gif-hd-01.md",
     "img-1.png.md",
