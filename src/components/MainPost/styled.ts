@@ -41,11 +41,12 @@ export const PostContent = styled.div`
     justify-content: center;
 `;
 
-export const Title = styled.p`
+export const Title = styled.h2`
     margin-bottom: 10px;
     font-size: 1.25em;
     font-weight: 300;
     line-height: 1.14;
+    color: ${({ theme }) => theme.color.black};
 `;
 
 export const Description = styled.p`
