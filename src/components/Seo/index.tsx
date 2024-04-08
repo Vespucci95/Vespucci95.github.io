@@ -20,7 +20,7 @@ type SeoProps = {
 };
 
 type Props = {
-    title: string;
+    title?: string;
     ogImageURL?: string | null;
 };
 
@@ -41,7 +41,7 @@ const Seo = ({ title, ogImageURL }: Props) => {
 
     return (
         <>
-            <title>{`${meta.siteMetadata.author} | ${title}`}</title>
+            <title>{`${title ?? meta.siteMetadata.author}`}</title>
             <meta lang="ko" />
             <meta property="og:type" content="website" />
             <meta httpEquiv="content-type" content="text/html; charset=UTF-8" />
