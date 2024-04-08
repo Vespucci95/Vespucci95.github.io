@@ -1,9 +1,8 @@
-import React, { ReactNode, useContext } from 'react';
+import React, { ReactNode } from 'react';
 import * as S from './styled';
 import { ThemeProvider } from '@emotion/react';
 import GlobalStyle from '@/styles/GlobalStyle';
-import { ThemeManagerContext } from 'gatsby-emotion-dark-mode';
-import { darkTheme, lightTheme } from '@/styles/Theme';
+import { lightTheme } from '@/styles/Theme';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 
@@ -12,9 +11,8 @@ type Props = {
 };
 
 const Layout = ({ children }: Props) => {
-    const theme = useContext(ThemeManagerContext);
     return (
-        <ThemeProvider theme={theme.isDark ? darkTheme : lightTheme}>
+        <ThemeProvider theme={lightTheme}>
             <GlobalStyle />
             <Header />
             <S.Container>{children}</S.Container>
