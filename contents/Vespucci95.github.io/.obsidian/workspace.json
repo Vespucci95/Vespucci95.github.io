@@ -11,12 +11,8 @@
             "id": "b926f8e3c7e26991",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2024/1.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024/1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024/1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024/1.md"
+                "file": "posts/what-is-lighthouse.md"
               }
             }
           },
@@ -156,8 +150,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b926f8e3c7e26991",
+  "active": "27226cab17a7e8e7",
   "lastOpenFiles": [
+    "posts/reactnative-masonry-list-improvement-review.md",
+    "posts/what-is-lighthouse.md",
+    "posts/docker-compose-dev-web-playground.md",
+    "posts/blog-markdown.md",
+    "2024/4.md",
     "2024/3.md",
     "2024/2.md",
     "2024/1.md",

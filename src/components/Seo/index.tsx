@@ -24,7 +24,7 @@ type Props = {
     ogImageURL?: string | null;
 };
 
-const Seo = ({ title, ogImageURL }: Props) => {
+const Seo = ({ title = '', ogImageURL }: Props) => {
     const { meta, ogImage }: SeoProps = useStaticQuery(graphql`
         query MetaQuery {
             meta: site {
@@ -39,6 +39,8 @@ const Seo = ({ title, ogImageURL }: Props) => {
         }
     `);
 
+    const convertTitleFormat = (content: string) => (title ? `${title} | ${content}` : content);
+
     return (
         <>
             <title>{`${title ?? meta.siteMetadata.author}`}</title>
@@ -47,14 +49,14 @@ const Seo = ({ title, ogImageURL }: Props) => {
             <meta httpEquiv="content-type" content="text/html; charset=UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={meta.siteMetadata.description} />
-            <meta property="og:title" content={`${meta.siteMetadata.author} | ${title}`} />
+            <meta property="og:title" content={convertTitleFormat(meta.siteMetadata.author)} />
             <meta property="og:description" content={meta.siteMetadata.description} />
             <meta property="og:image" content={ogImageURL ?? ogImage.publicURL} />
-            <meta property="og:site_name" content={`${meta.siteMetadata.author} | ${title}`} />
-            <meta property="og:site_title" content={`${meta.siteMetadata.author} | ${title}`} />
+            <meta property="og:site_name" content={convertTitleFormat(meta.siteMetadata.author)} />
+            <meta property="og:site_title" content={convertTitleFormat(meta.siteMetadata.author)} />
             <meta property="og:author" content={meta.siteMetadata.author} />
             <meta name="twitter:card" content="summary" />
-            <meta name="twitter:title" content={`${meta.siteMetadata.author} | ${title}`} />
+            <meta name="twitter:title" content={convertTitleFormat(meta.siteMetadata.author)} />
             <meta name="twitter:description" content={meta.siteMetadata.description} />
             <meta name="twitter:image" content={meta.siteMetadata.siteUrl} />
             <meta name="google-site-verification" content="NRo4yKk2rmtkRhrG_L6RCXb1Jcw8VZwg6beWfo3U2t0" />
