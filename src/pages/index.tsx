@@ -27,7 +27,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
     );
 };
 
-export const Head: HeadFC = () => <Seo />;
+export const Head: HeadFC = () => <Seo title="개발자 이현서" />;
 
 export default IndexPage;
 
